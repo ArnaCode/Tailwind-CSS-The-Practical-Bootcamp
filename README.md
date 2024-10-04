@@ -2,7 +2,7 @@
 
 ![](projects.jpg)
 
-You will **master Tailwind CSS** from the ground up and transform your
+In this, bootcamp, You will **master Tailwind CSS** from the ground up and transform your
 web development skills with **hands-on coding
 exercises** and **real-world projects**. Whether you're just getting
 started or a seasoned developer looking to add Tailwind to your toolkit,
