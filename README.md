@@ -1,4 +1,6 @@
-# \*Welcome to **Tailwind CSS - The Practical Bootcamp\***
+# Welcome to **Tailwind CSS - The Practical Bootcamp**
+
+![](projects.jpg)
 
 You will **master Tailwind CSS** from the ground up and transform your
 web development skills with **hands-on coding
@@ -175,5 +177,5 @@ Key features of this project:
 
 Whether you're starting from scratch or advancing your web development
 skills, this Bootcamp will provide you with the tools and knowledge you
-need to succeed. **Take the leap** and enroll today---your journey to
+need to succeed. **Take the leap** and enroll today. Your journey to
 mastering Tailwind CSS and building real-world projects starts here!
