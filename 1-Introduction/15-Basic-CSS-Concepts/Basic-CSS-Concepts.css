@@ -1,0 +1,96 @@
+/* 1. Selectors */
+
+/* Element Selector: Targets all <p> elements */
+p {
+  color: blue; /* Changes text color to blue */
+  font-size: 16px; /* Sets font size to 16px */
+}
+
+/* Class Selector: Targets elements with class "highlight" */
+.highlight {
+  color: red; /* Changes text color to red */
+  font-weight: bold; /* Makes the text bold */
+}
+
+/* ID Selector: Targets the element with ID "unique-element" */
+#unique-element {
+  color: green; /* Changes text color to green */
+  font-style: italic; /* Italicizes the text */
+}
+
+/* Universal Selector: Targets all elements within the div */
+.universal-example * {
+  color: purple; /* Changes the color of all elements inside the div to purple */
+  margin-bottom: 10px; /* Adds space between elements */
+}
+
+/* Attribute Selector: Targets input elements with type="text" */
+input[type="text"] {
+  border: 2px solid black; /* Adds a solid black border */
+  padding: 5px; /* Adds padding inside the input field */
+}
+
+/* Pseudo-Class: Targets <a> elements on hover */
+a.pseudo-class:hover {
+  color: orange; /* Changes text color to orange when hovered */
+}
+
+/* Pseudo-Element: Adds content before <p> elements */
+p.pseudo-element::before {
+  content: "Note: "; /* Adds the word 'Note:' before the text */
+  font-weight: bold; /* Makes the inserted content bold */
+  color: darkred; /* Changes the inserted content color to dark red */
+}
+
+/* 2. Properties */
+
+/* Color, Background, and Text Properties */
+.properties-example {
+  color: white; /* Sets text color to white */
+  background-color: darkblue; /* Sets background color to dark blue */
+  font-family: Arial, sans-serif; /* Sets the font family */
+  font-size: 18px; /* Sets the font size */
+  text-align: center; /* Centers the text */
+  padding: 20px; /* Adds padding inside the box */
+  text-transform: uppercase; /* Transforms the text to uppercase */
+}
+
+/* 3. Box Model */
+
+/* Demonstration of the CSS Box Model */
+.box-model-example {
+  width: 200px; /* Sets the content width */
+  height: 100px; /* Sets the content height */
+  padding: 20px; /* Adds padding inside the box */
+  border: 5px solid black; /* Adds a solid black border */
+  margin: 10px; /* Adds margin space outside the box */
+  background-color: lightcoral; /* Sets background color */
+}
+
+/* 4. Display and Positioning */
+
+/* Display: Block-Level Element */
+.display-block {
+  display: block; /* Makes the element behave as a block */
+  background-color: lightgray; /* Sets background color */
+  padding: 10px; /* Adds padding inside the block element */
+  margin-bottom: 10px; /* Adds space below the block */
+}
+
+/* Display: Inline Element */
+.display-inline {
+  display: inline; /* Makes the element behave as an inline element */
+  background-color: lightgreen; /* Sets background color */
+  padding: 5px; /* Adds padding inside the inline element */
+  margin-right: 10px; /* Adds space to the right of the inline element */
+}
+
+/* Positioning: Relative Positioning */
+.positioning-example {
+  position: relative; /* Makes the element relatively positioned */
+  top: 10px; /* Moves the element down 10px from its normal position */
+  left: 20px; /* Moves the element 20px to the right from its normal position */
+  background-color: lightblue; /* Sets background color */
+  padding: 10px; /* Adds padding inside the box */
+  border: 2px dashed blue; /* Adds a dashed blue border */
+}

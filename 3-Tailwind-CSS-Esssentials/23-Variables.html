@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind CSS Essentials - Variables</title>
+  </head>
+  <body>
+    <!-- 
+    @layer base {
+      :root {
+        /* For rgb(255 115 179 / <alpha-value>) */
+        --color-primary: 235 91 147;
+
+        /* For hsl(198deg 93% 60% / <alpha-value>) */
+        --color-secondary: 205deg 28% 35%;
+
+        --font-size-primary: 55px;
+        --font-size-secondary: 35px;
+      }
+    }
+
+    .btn-font-size-primary {
+      font-size: var(--font-size-primary);
+    }
+
+    .btn-font-size-secondary {
+      font-size: var(--font-size-secondary);
+    }
+
+    Config File *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    /** @type {import('tailwindcss').Config} */
+    module.exports = {
+      theme: {
+        extend: {
+          colors: {
+            primary: 'rgb(var(--color-primary) / <alpha-value>)',
+            secondary: 'hsl(var(--color-secondary) / <alpha-value>)',
+
+            primaryBlue: "rgb(54 194 206)",
+            primaryGreen: "hsl(119 99% 41%)"
+          },
+          padding: {
+            "padding-x-primary": "16px",
+            "padding-y-primary": "8px",
+          }
+        },
+      },
+      plugins: [],
+    }
+    --------------------------------
+    --------------------------------
+    -->
+
+    <button class="text-2xl rounded text-white block mb-8 px-6 py-2 bg-primary">
+      Button
+    </button>
+
+    <button
+      class="text-2xl rounded text-white block mb-8 px-6 py-2 bg-secondary"
+    >
+      Button
+    </button>
+
+    <button
+      class="text-2xl rounded text-white block mb-8 px-6 py-2 bg-primaryBlue"
+    >
+      Button
+    </button>
+
+    <button
+      class="text-2xl rounded text-white block mb-8 px-6 py-2 bg-primaryGreen"
+    >
+      Button
+    </button>
+
+    <button
+      class="btn-font-size-primary rounded text-white block mb-8 px-6 py-2 bg-zinc-600"
+    >
+      Button
+    </button>
+
+    <button
+      class="btn-font-size-secondary rounded text-white block mb-8 px-6 py-2 bg-amber-600"
+    >
+      Button
+    </button>
+
+    <button
+      class="text-2xl rounded text-white block mb-8 px-padding-x-primary py-padding-y-primary bg-blue-600"
+    >
+      Button
+    </button>
+  </body>
+</html>

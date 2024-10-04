@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        darkMode: "selector",
+        theme: {
+          extend: {},
+        },
+      };
+    </script>
+
+    <title>Tailwind CSS Essentials - Transforms</title>
+  </head>
+  <body
+    class="bg-slate-200 dark:bg-slate-800 h-screen flex justify-center items-center flex-col transition"
+  >
+    <section
+      class="bg-slate-300 text-slate-800 dark:bg-slate-900 dark:text-slate-300 rounded px-12 py-8 mb-12 transition-colors"
+    >
+      <h1 class="text-2xl font-semibold mb-2">
+        Fun Facts About Animals That Will Blow Your Mind
+      </h1>
+      <p>Polar bears have black skin.</p>
+      <p>Chinese water deer swim island to island in search of food.</p>
+      <p>The bat is the only mammal that can fly.</p>
+      <p>Narwhal tusks are really an "inside out" tooth.</p>
+      <p>Gorillas can catch human colds and other illnesses.</p>
+      <p>A grizzly bear's bite is strong enough to crush a bowling ball.</p>
+      <p>Snakes only eat animals.</p>
+      <p>Pigeons can do math.</p>
+      <p>A group of ferrets is called a business.</p>
+      <p>A group of owls is called a parliament.</p>
+      <p>A group of rhinos is called a crash.</p>
+    </section>
+
+    <button
+      class="bg-slate-300 text-slate-800 dark:bg-slate-900 dark:text-slate-300 px-8 py-4 rounded transition-all duration-2000 ease-in-out"
+    >
+      Change Theme
+    </button>
+
+    <div class="absolute top-8 right-16">
+      <input
+        class="bg-slate-300 dark:bg-slate-900 appearance-none h-8 w-16 rounded-full relative before:absolute before:h-8 before:w-8 before:bg-slate-900 dark:before:bg-slate-300 before:content-[''] before:rounded-full before:scale-110 checked:before:translate-x-8"
+        type="checkbox"
+      />
+    </div>
+
+    <script>
+      let checkBox = document.querySelector("input[type='checkbox']");
+
+      document.querySelector("button").addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+        checkBox.classList.toggle("before:translate-x-8");
+      });
+
+      checkBox.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output/output.css" />
+    <title>Tailwind CSS - Coding the Grid Layout</title>
+  </head>
+  <body class="bg-[#26355D]">
+    <!-- 
+    Place Content *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    ----------------------------------------------------------
+    place-content-center	                        place-content: center;
+    place-content-start	                          place-content: start;
+    place-content-end	                            place-content: end;
+    place-content-between	                        place-content: space-between;
+    place-content-around	                        place-content: space-around;
+    place-content-evenly	                        place-content: space-evenly;
+    place-content-baseline	                      place-content: baseline;
+    place-content-stretch	                        place-content: stretch;
+    ----------------------------------------------------------
+    -->
+
+    <section class="text-white">
+      <div
+        class="*:p-4 *:bg-[#AF47D2] *:rounded *:border-2 *:border-white border-8 border-blue-500 rounded m-2 grid grid-cols-[repeat(3,150px)] grid-rows-[repeat(3,100px)] gap-4 h-screen place-content-evenly"
+      >
+        <p>Item 1</p>
+        <p>Item 2</p>
+        <p>Item 3</p>
+        <p>Item 4</p>
+        <p>Item 5</p>
+        <p>Item 6</p>
+        <p>Item 7</p>
+        <p>Item 8</p>
+        <p>Item 9</p>
+      </div>
+    </section>
+  </body>
+</html>

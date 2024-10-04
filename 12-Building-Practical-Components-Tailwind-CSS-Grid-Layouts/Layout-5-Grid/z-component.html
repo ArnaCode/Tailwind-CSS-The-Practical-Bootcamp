@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../output/output.css" />
+    <title>Tailwind CSS Grid Overlapping Layout</title>
+  </head>
+  <body>
+    <main class="grid gap-5 grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
+      <figure class="grid grid-cols-1 grid-rows-1">
+        <img
+          class="col-start-1 col-end-2 row-start-1 row-end-2"
+          src="https://cdn.pixabay.com/photo/2023/09/20/15/47/fish-8265114_1280.jpg"
+          alt=""
+        />
+        <figcaption
+          class="col-start-1 col-end-2 row-start-1 row-end-2 self-end bg-gray-600/65 text-white text-2xl p-4 rounded-b-[4px]"
+        >
+          The Beauty of Nature
+        </figcaption>
+      </figure>
+
+      <figure class="grid grid-cols-1 grid-rows-1">
+        <img
+          class="col-start-1 col-end-2 row-start-1 row-end-2"
+          src="https://cdn.pixabay.com/photo/2024/05/12/09/28/brown-bear-8756478_1280.png"
+          alt=""
+        />
+        <figcaption
+          class="col-start-1 col-end-2 row-start-1 row-end-2 self-end bg-gray-600/65 text-white text-2xl p-4 rounded-b-[4px]"
+        >
+          The Beauty of Nature
+        </figcaption>
+      </figure>
+
+      <figure class="grid grid-cols-1 grid-rows-1">
+        <img
+          class="col-start-1 col-end-2 row-start-1 row-end-2"
+          src="https://cdn.pixabay.com/photo/2024/05/14/05/38/gorilla-8760357_1280.jpg"
+          alt=""
+        />
+        <figcaption
+          class="col-start-1 col-end-2 row-start-1 row-end-2 self-end bg-gray-600/65 text-white text-2xl p-4 rounded-b-[4px]"
+        >
+          The Beauty of Nature
+        </figcaption>
+      </figure>
+
+      <figure class="grid grid-cols-1 grid-rows-1">
+        <img
+          class="col-start-1 col-end-2 row-start-1 row-end-2"
+          src="https://cdn.pixabay.com/photo/2024/04/16/16/25/ai-generated-8700383_1280.jpg"
+          alt=""
+        />
+        <figcaption
+          class="col-start-1 col-end-2 row-start-1 row-end-2 self-end bg-gray-600/65 text-white text-2xl p-4 rounded-b-[4px]"
+        >
+          The Beauty of Nature
+        </figcaption>
+      </figure>
+    </main>
+  </body>
+</html>

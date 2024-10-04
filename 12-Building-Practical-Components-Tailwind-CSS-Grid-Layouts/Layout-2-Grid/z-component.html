@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../output/output.css" />
+    <title>Tailwind CSS Grid Newsletter</title>
+  </head>
+  <body>
+    <main
+      class="md:border-2 md:border-purple-600/20 md:p-8 md:rounded grid gap-y-4 justify-items-center xl:gap-y-12"
+    >
+      <div class="text-center space-y-2">
+        <h6 class="text-ls text-purple-600">Newsletter</h6>
+        <h1 class="text-2xl font-bold sm:text-4xl">
+          Subscribe to our Newsletter
+        </h1>
+        <p class="text-lg">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque,
+          tempore? Dicta libero quo similique ipsa!
+        </p>
+      </div>
+
+      <form
+        class="w-full shadow-md p-5 rounded *:rounded *:text-xl *:px-4 *:py-2 sm:w-3/4 grid gap-6 md:grid-cols-[1fr_min-content]"
+      >
+        <input
+          class="focus:outline-none border-2 border-purple-600/20 placeholder:text-purple-600/40"
+          type="email"
+          placeholder="Your Email Address"
+        />
+        <input
+          class="bg-purple-600 text-white cursor-pointer"
+          type="submit"
+          value="Subscribe"
+        />
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            animation: {
+              travel: "travel 4s alternate infinite",
+            },
+            keyframes: {
+              travel: {
+                "0%": { transform: "translate(0)" },
+                "14%": { transform: "translate(200px, 0px)" },
+                "28%": { transform: "translate(200px, -300px)" },
+                "42%": { transform: "translate(-1100px, -300px)" },
+                "56%": { transform: "translate(-1100px, 300px)" },
+                "70%": { transform: "translate(200px, 300px)" },
+                "84%": { transform: "translate(200px, 0px)" },
+                "100%": { transform: "translate(0)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>Tailwind CSS Essentials - Animations</title>
+  </head>
+  <body
+    class="bg-slate-200 dark:bg-slate-800 h-screen flex justify-center items-center flex-col transition"
+  >
+    <!-- <div class="h-32 w-32 rounded-3xl mb-12 bg-orange-500 animate-ping"></div>
+    <div class="h-32 w-32 rounded-3xl mb-12 bg-orange-500 animate-spin"></div>
+    <div class="h-32 w-32 rounded-3xl mb-12 bg-orange-500 animate-pulse"></div>
+    <div class="h-32 w-32 rounded-3xl mb-12 bg-orange-500 animate-bounce"></div> -->
+
+    <div class="h-32 w-32 rounded-full bg-orange-500 animate-travel"></div>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "tailwind-css-grid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tailwindcss -i ./src/input.css -o ./output/output.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./output/output.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.6"
+  }
+}

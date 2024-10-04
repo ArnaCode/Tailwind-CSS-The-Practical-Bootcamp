@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind CSS Essentials - Directives</title>
+  </head>
+  <body>
+    <!-- 
+    --------------------------------
+    --------------------------------
+
+    Directives *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    
+    @tailwind
+    @layer
+    @apply
+    @config
+
+    --------------------------------
+    --------------------------------
+
+    @tailwind *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+    @tailwind variants;
+
+    --------------------------------
+    --------------------------------
+
+    @layer *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    @layer base {
+      :root {
+        /* For rgb(255 115 179 / <alpha-value>) */
+        --color-primary: 119 228 200;
+
+        /* For hsl(198deg 93% 60% / <alpha-value>) */
+        --color-secondary: 73deg 100% 80%;
+      }
+      h1 {
+        @apply text-2xl;
+      }
+      h2 {
+        @apply text-xl;
+      }
+    }
+
+    @layer components {
+      .btn {
+        @apply bg-slate-500 hover:bg-slate-700 text-white px-4 py-2 rounded border-2 border-white;
+      }
+
+      @apply *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*.
+      .card-container {
+        @apply flex flex-col px-6 py-4 rounded;
+      }
+    }
+
+    @layer utilities {
+      .flex {
+        display: flex;
+      }
+
+      .flex-col {
+        flex-direction: column;
+      }
+    }
+    -->
+  </body>
+</html>

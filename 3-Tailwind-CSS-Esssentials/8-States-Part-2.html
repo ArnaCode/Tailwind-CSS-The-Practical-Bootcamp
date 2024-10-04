@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind CSS Essentials - States Part 2</title>
+  </head>
+  <body class="bg-slate-900">
+    <ul
+      class="text-white text-xl bg-amber-600 rounded px-12 py-8 m-8 group hover:bg-slate-200 *:py-0.5"
+    >
+      <h1 class="text-3xl font-semibold mb-2 group-hover:text-slate-900">
+        Fun Facts About Animals That Will Blow Your Mind
+      </h1>
+      <li class="group-hover:text-slate-900">Polar bears have black skin.</li>
+      <li class="group-hover:text-slate-900">
+        Chinese water deer swim island to island in search of food.
+      </li>
+      <li class="group-hover:text-slate-900">
+        The bat is the only mammal that can fly.
+      </li>
+      <li class="group-hover:text-slate-900">
+        Narwhal tusks are really an "inside out" tooth.
+      </li>
+      <li class="group-hover:text-slate-900">
+        Gorillas can catch human colds and other illnesses.
+      </li>
+      <li class="group-hover:text-slate-900">
+        A grizzly bear's bite is strong enough to crush a bowling ball.
+      </li>
+      <li class="group-hover:text-slate-900">Snakes only eat animals.</li>
+      <li class="group-hover:text-slate-900">Pigeons can do math.</li>
+      <li class="group-hover:text-slate-900">
+        A group of ferrets is called a business.
+      </li>
+      <li class="group-hover:text-slate-900">
+        A group of owls is called a parliament.
+      </li>
+      <li class="group-hover:text-slate-900">
+        A group of rhinos is called a crash.
+      </li>
+    </ul>
+
+    <div class="flex flex-col gap-y-2 mx-8">
+      <label class="text-white text-xl" for="email">Email</label>
+      <input
+        class="px-6 py-2 w-96 text-2xl rounded outline-none focus:bg-sky-500 focus:invalid:bg-red-400 peer"
+        type="email"
+      />
+      <span class="invisible peer-invalid:visible text-red-400 text-sm"
+        >Email is not valid</span
+      >
+    </div>
+  </body>
+</html>

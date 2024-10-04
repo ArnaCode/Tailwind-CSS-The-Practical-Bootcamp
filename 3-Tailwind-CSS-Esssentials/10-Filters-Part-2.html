@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind CSS Essentials - Filters Part 2</title>
+  </head>
+  <body class="bg-slate-900 h-screen flex justify-center items-center">
+    <!-- 
+    --------------------------------
+    --------------------------------
+
+    Brightness *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    backdrop-brightness-0	      filter: brightness(0);
+    backdrop-brightness-50	      filter: brightness(.5);
+    backdrop-brightness-100	      filter: brightness(1);
+    backdrop-brightness-150	      filter: brightness(1.5);
+    backdrop-brightness-200	      filter: brightness(2);
+
+    --------------------------------
+    --------------------------------
+
+    Contrast *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    backdrop-contrast-0	        filter: contrast(0);
+    backdrop-contrast-50	        filter: contrast(.5);
+    backdrop-contrast-100	        filter: contrast(1);
+    backdrop-contrast-150	        filter: contrast(1.5);
+    backdrop-contrast-200	        filter: contrast(2);
+
+    --------------------------------
+    --------------------------------
+
+    Gray Scale *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    backdrop-grayscale-0	        filter: grayscale(0);
+    backdrop-grayscale	          filter: grayscale(100%);
+
+    --------------------------------
+    --------------------------------
+
+    Blur *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    backdrop-blur-none	          filter: blur(0);
+    backdrop-blur-sm	            filter: blur(4px);
+    backdrop-blur	              filter: blur(8px);
+    backdrop-blur-md	            filter: blur(12px);
+    backdrop-blur-lg	            filter: blur(16px);
+    backdrop-blur-xl	            filter: blur(24px);
+    backdrop-blur-2xl	          filter: blur(40px);
+    backdrop-blur-3xl	          filter: blur(64px);
+
+    --------------------------------
+    --------------------------------
+
+    Saturate *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    backdrop-saturate-0	        filter: saturate(0);
+    backdrop-saturate-50	        filter: saturate(.5);
+    backdrop-saturate-100	        filter: saturate(1);
+    backdrop-saturate-150	        filter: saturate(1.5);
+    backdrop-saturate-200	        filter: saturate(2);
+
+    --------------------------------
+    --------------------------------
+
+    Sepia *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    backdrop-sepia-0	             filter: sepia(0);
+    backdrop-sepia	             filter: sepia(100%);
+
+    --------------------------------
+    --------------------------------
+
+    Invert *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    backdrop-invert-0	             filter: invert(0);
+    backdrop-invert	             filter: invert(100%);
+
+    --------------------------------
+    --------------------------------
+
+    Hue Rotate *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    backdrop-hue-rotate-0	      filter: hue-rotate(0deg);
+    backdrop-hue-rotate-15	      filter: hue-rotate(15deg);
+    backdrop-hue-rotate-30	      filter: hue-rotate(30deg);
+    backdrop-hue-rotate-60	      filter: hue-rotate(60deg);
+    backdrop-hue-rotate-90	      filter: hue-rotate(90deg);
+    backdrop-hue-rotate-180	      filter: hue-rotate(180deg);
+              
+
+    --------------------------------
+    --------------------------------
+
+    Drop Shadow *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    backdrop-drop-shadow-sm	      filter: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05));
+    backdrop-drop-shadow	          filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+    backdrop-drop-shadow-md	      filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+    backdrop-drop-shadow-lg	      filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+    backdrop-drop-shadow-xl	      filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+    backdrop-drop-shadow-2xl	      filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+    backdrop-drop-shadow-none	    filter: drop-shadow(0 0 #0000);
+              
+    --------------------------------
+    --------------------------------
+    -->
+    <figure class="relative">
+      <img
+        class=""
+        src="https://images.pexels.com/photos/24461005/pexels-photo-24461005/free-photo-of-model-in-coat-and-boots.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt=""
+      />
+      <span
+        class="h-56 w-56 rounded-full bg-slate-300/50 absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 backdrop-blur-md"
+      ></span>
+    </figure>
+  </body>
+</html>

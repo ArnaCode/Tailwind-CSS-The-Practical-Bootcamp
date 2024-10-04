@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output/output.css" />
+    <title>Tailwind CSS - Coding the Grid Layout</title>
+  </head>
+  <body class="bg-[#26355D]">
+    <!-- 
+    Gap *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    ----------------------------------------------------------
+    gap-0                         	gap: 0px;
+    gap-x-0	                        column-gap: 0px;
+    gap-y-0	                        row-gap: 0px;
+    gap-px                          gap: 1px;
+    gap-x-px	                      column-gap: 1px;
+    gap-y-px	                      row-gap: 1px;
+    gap-0.5                         gap: 0.125rem; /* 2px */
+    gap-x-0.5	                      column-gap: 0.125rem; /* 2px */
+    gap-y-0.5	                      row-gap: 0.125rem; /* 2px */
+    gap-1                         	gap: 0.25rem; /* 4px */
+    gap-x-1	                        column-gap: 0.25rem; /* 4px */
+    gap-y-1	                        row-gap: 0.25rem; /* 4px */
+    gap-1.5                         gap: 0.375rem; /* 6px */
+    gap-x-1.5	                      column-gap: 0.375rem; /* 6px */
+    gap-y-1.5	                      row-gap: 0.375rem; /* 6px */
+    gap-2                         	gap: 0.5rem; /* 8px */
+    gap-x-2	                        column-gap: 0.5rem; /* 8px */
+    gap-y-2	                        row-gap: 0.5rem; /* 8px */
+    gap-2.5                         gap: 0.625rem; /* 10px */
+    gap-x-2.5	                      column-gap: 0.625rem; /* 10px */
+    gap-y-2.5	                      row-gap: 0.625rem; /* 10px */
+    gap-3                         	gap: 0.75rem; /* 12px */
+    gap-x-3	                        column-gap: 0.75rem; /* 12px */
+    gap-y-3	                        row-gap: 0.75rem; /* 12px */
+    gap-3.5                         gap: 0.875rem; /* 14px */
+    gap-x-3.5	                      column-gap: 0.875rem; /* 14px */
+    gap-y-3.5	                      row-gap: 0.875rem; /* 14px */
+    gap-4                         	gap: 1rem; /* 16px */
+    gap-x-4	                        column-gap: 1rem; /* 16px */
+    gap-y-4	                        row-gap: 1rem; /* 16px */
+    gap-5                         	gap: 1.25rem; /* 20px */
+    gap-x-5	                        column-gap: 1.25rem; /* 20px */
+    gap-y-5	                        row-gap: 1.25rem; /* 20px */
+    gap-6                         	gap: 1.5rem; /* 24px */
+    gap-x-6	                        column-gap: 1.5rem; /* 24px */
+    gap-y-6	                        row-gap: 1.5rem; /* 24px */
+    gap-7                         	gap: 1.75rem; /* 28px */
+    gap-x-7	                        column-gap: 1.75rem; /* 28px */
+    gap-y-7	                        row-gap: 1.75rem; /* 28px */
+    gap-8                         	gap: 2rem; /* 32px */
+    gap-x-8	                        column-gap: 2rem; /* 32px */
+    gap-y-8	                        row-gap: 2rem; /* 32px */
+    gap-9                         	gap: 2.25rem; /* 36px */
+    gap-x-9	                        column-gap: 2.25rem; /* 36px */
+    gap-y-9	                        row-gap: 2.25rem; /* 36px */
+    gap-10                          	gap: 2.5rem; /* 40px */
+    gap-x-10	                        column-gap: 2.5rem; /* 40px */
+    gap-y-10	                        row-gap: 2.5rem; /* 40px */
+    gap-11                          	gap: 2.75rem; /* 44px */
+    gap-x-11	                        column-gap: 2.75rem; /* 44px */
+    gap-y-11	                        row-gap: 2.75rem; /* 44px */
+    gap-12                          	gap: 3rem; /* 48px */
+    gap-x-12	                        column-gap: 3rem; /* 48px */
+    gap-y-12	                        row-gap: 3rem; /* 48px */
+    gap-14                          	gap: 3.5rem; /* 56px */
+    gap-x-14	                        column-gap: 3.5rem; /* 56px */
+    gap-y-14	                        row-gap: 3.5rem; /* 56px */
+    gap-16                          	gap: 4rem; /* 64px */
+    gap-x-16	                        column-gap: 4rem; /* 64px */
+    gap-y-16	                        row-gap: 4rem; /* 64px */
+    gap-20                          	gap: 5rem; /* 80px */
+    gap-x-20	                        column-gap: 5rem; /* 80px */
+    gap-y-20	                        row-gap: 5rem; /* 80px */
+    gap-24                          	gap: 6rem; /* 96px */
+    gap-x-24	                        column-gap: 6rem; /* 96px */
+    gap-y-24	                        row-gap: 6rem; /* 96px */
+    gap-28                          	gap: 7rem; /* 112px */
+    gap-x-28	                        column-gap: 7rem; /* 112px */
+    gap-y-28	                        row-gap: 7rem; /* 112px */
+    gap-32                          	gap: 8rem; /* 128px */
+    gap-x-32	                        column-gap: 8rem; /* 128px */
+    gap-y-32	                        row-gap: 8rem; /* 128px */
+    gap-36                          	gap: 9rem; /* 144px */
+    gap-x-36	                        column-gap: 9rem; /* 144px */
+    gap-y-36	                        row-gap: 9rem; /* 144px */
+    gap-40                          	gap: 10rem; /* 160px */
+    gap-x-40	                        column-gap: 10rem; /* 160px */
+    gap-y-40	                        row-gap: 10rem; /* 160px */
+    gap-44                          	gap: 11rem; /* 176px */
+    gap-x-44	                        column-gap: 11rem; /* 176px */
+    gap-y-44	                        row-gap: 11rem; /* 176px */
+    gap-48                          	gap: 12rem; /* 192px */
+    gap-x-48	                        column-gap: 12rem; /* 192px */
+    gap-y-48	                        row-gap: 12rem; /* 192px */
+    gap-52                          	gap: 13rem; /* 208px */
+    gap-x-52	                        column-gap: 13rem; /* 208px */
+    gap-y-52	                        row-gap: 13rem; /* 208px */
+    gap-56                          	gap: 14rem; /* 224px */
+    gap-x-56	                        column-gap: 14rem; /* 224px */
+    gap-y-56	                        row-gap: 14rem; /* 224px */
+    gap-60                          	gap: 15rem; /* 240px */
+    gap-x-60	                        column-gap: 15rem; /* 240px */
+    gap-y-60	                        row-gap: 15rem; /* 240px */
+    gap-64                          	gap: 16rem; /* 256px */
+    gap-x-64	                        column-gap: 16rem; /* 256px */
+    gap-y-64	                        row-gap: 16rem; /* 256px */
+    gap-72                          	gap: 18rem; /* 288px */
+    gap-x-72	                        column-gap: 18rem; /* 288px */
+    gap-y-72	                        row-gap: 18rem; /* 288px */
+    gap-80                          	gap: 20rem; /* 320px */
+    gap-x-80	                        column-gap: 20rem; /* 320px */
+    gap-y-80	                        row-gap: 20rem; /* 320px */
+    gap-96                          	gap: 24rem; /* 384px */
+    gap-x-96	                        column-gap: 24rem; /* 384px */
+    gap-y-96	                        row-gap: 24rem; /* 384px */
+    ----------------------------------------------------------
+    -->
+
+    <section class="text-white">
+      <h1 class="text-xl font-semibold m-2 bg-[#FF8F00] p-4 rounded">
+        Fun Facts About Animals That Will Blow Your Mind
+      </h1>
+      <div
+        class="*:p-4 *:bg-[#AF47D2] *:rounded m-2 grid grid-cols-[300px_200px_300px] grid-rows-[100px_150px_100px] gap-x-2 gap-y-2"
+      >
+        <p>Polar bears have black skin.</p>
+        <p>Chinese water deer swim island to island in search of food.</p>
+        <p>The bat is the only mammal that can fly.</p>
+        <p>Narwhal tusks are really an "inside out" tooth.</p>
+        <p>Gorillas can catch human colds and other illnesses.</p>
+        <p>A grizzly bear's bite is strong enough to crush a bowling ball.</p>
+        <p>Snakes only eat animals.</p>
+        <p>Pigeons can do math.</p>
+        <p>A group of ferrets is called a business.</p>
+        <p>A group of owls is called a parliament.</p>
+        <p>A group of rhinos is called a crash.</p>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../output/output.css" />
+    <title>Tailwind CSS Grid Customer Review</title>
+  </head>
+  <body class="bg-amber-600">
+    <main class="w-full max-w-screen-2xl grid gap-y-8">
+      <h1 class="text-3xl text-white font-bold lg:text-4xl">
+        Most recent reviews
+      </h1>
+
+      <section
+        class="grid gap-5 grid-cols-[repeat(auto-fit,minmax(300px,1fr))]"
+      >
+        <!-- ----------------------------- -->
+        <div class="p-5 bg-orange-200 rounded grid gap-y-6">
+          <div class="grid gap-x-2.5 grid-cols-[max-content_max-content_1fr]">
+            <div class="col-span-2 grid grid-cols-subgrid">
+              <p class="text-xs">
+                <i class="fa-solid fa-star text-orange-400"></i>
+                <i class="fa-solid fa-star text-orange-400"></i>
+                <i class="fa-solid fa-star text-orange-400"></i>
+                <i class="fa-solid fa-star text-orange-400"></i>
+                <i class="fa-solid fa-star text-gray-500"></i>
+              </p>
+
+              <p class="text-xs">Rating: <span class="font-black">4.0</span></p>
+            </div>
+            <p class="text-xs justify-self-end">22, July 2027</p>
+          </div>
+
+          <div class="grid gap-y-2">
+            <h2 class="text-xl font-bold">Not bad</h2>
+            <p class="text-base">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid,
+              veritatis
+            </p>
+          </div>
+
+          <div class="grid gap-x-2.5 grid-cols-2">
+            <p><i class="fa-solid fa-user mr-2.5"></i> Sandra Doe</p>
+            <div class="justify-self-end grid grid-cols-2 gap-x-2.5">
+              <p>
+                <i class="fa-solid fa-thumbs-up text-blue-500 text-lg"></i> 4
+              </p>
+              <p>Reply</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ----------------------------- -->
+        <div class="p-5 bg-orange-200 rounded grid gap-y-6">
+          <div class="grid gap-x-2.5 grid-cols-[max-content_max-content_1fr]">
+            <div class="col-span-2 grid grid-cols-subgrid">
+              <p class="text-xs">
+                <i class="fa-solid fa-star text-orange-400"></i>
+                <i class="fa-solid fa-star text-orange-400"></i>
+                <i class="fa-solid fa-star text-orange-400"></i>
+                <i class="fa-solid fa-star text-orange-400"></i>
+                <i class="fa-solid fa-star text-orange-400"></i>
+              </p>
+
+              <p class="text-xs">Rating: <span class="font-black">5.0</span></p>
+            </div>
+            <p class="text-xs justify-self-end">12, Nov 2100</p>
+          </div>
+
+          <div class="grid gap-y-2">
+            <h2 class="text-xl font-bold">Fantastic</h2>
+            <p class="text-base">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid,
+              veritatis
+            </p>
+          </div>
+
+          <div class="grid gap-x-2.5 grid-cols-2">
+            <p><i class="fa-solid fa-user mr-2.5"></i> Jane Doe</p>
+            <div class="justify-self-end grid grid-cols-2 gap-x-2.5">
+              <p>
+                <i class="fa-solid fa-thumbs-up text-blue-500 text-lg"></i> 35
+              </p>
+              <p>Reply</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ----------------------------- -->
+        <div class="p-5 bg-orange-200 rounded grid gap-y-6">
+          <div class="grid gap-x-2.5 grid-cols-[max-content_max-content_1fr]">
+            <div class="col-span-2 grid grid-cols-subgrid">
+              <p class="text-xs">
+                <i class="fa-solid fa-star text-orange-400"></i>
+                <i class="fa-solid fa-star text-gray-500"></i>
+                <i class="fa-solid fa-star text-gray-500"></i>
+                <i class="fa-solid fa-star text-gray-500"></i>
+                <i class="fa-solid fa-star text-gray-500"></i>
+              </p>
+
+              <p class="text-xs">Rating: <span class="font-black">1.0</span></p>
+            </div>
+            <p class="text-xs justify-self-end">05, Jan 2026</p>
+          </div>
+
+          <div class="grid gap-y-2">
+            <h2 class="text-xl font-bold">Disappointed</h2>
+            <p class="text-base">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid,
+              veritatis
+            </p>
+          </div>
+
+          <div class="grid gap-x-2.5 grid-cols-2">
+            <p><i class="fa-solid fa-user mr-2.5"></i> Jack Doe</p>
+            <div class="justify-self-end grid grid-cols-2 gap-x-2.5">
+              <p>
+                <i class="fa-solid fa-thumbs-up text-gray-500 text-lg"></i>
+              </p>
+              <p>Reply</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ----------------------------- -->
+        <div
+          class="p-5 bg-orange-200 rounded grid gap-y-6 988px:max-1356px:col-span-3"
+        >
+          <div class="grid gap-x-2.5 grid-cols-[max-content_max-content_1fr]">
+            <div class="col-span-2 grid grid-cols-subgrid">
+              <p class="text-xs">
+                <i class="fa-solid fa-star text-orange-400"></i>
+                <i class="fa-solid fa-star text-orange-400"></i>
+                <i class="fa-solid fa-star text-orange-400"></i>
+                <i class="fa-solid fa-star text-orange-400"></i>
+                <i class="fa-solid fa-star text-gray-500"></i>
+              </p>
+
+              <p class="text-xs">Rating: <span class="font-black">4.0</span></p>
+            </div>
+            <p class="text-xs justify-self-end">12, Dec 2025</p>
+          </div>
+
+          <div class="grid gap-y-2">
+            <h2 class="text-xl font-bold">Satisfied</h2>
+            <p class="text-base">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid,
+              veritatis
+            </p>
+          </div>
+
+          <div class="grid gap-x-2.5 grid-cols-2">
+            <p><i class="fa-solid fa-user mr-2.5"></i> John Doe</p>
+            <div class="justify-self-end grid grid-cols-2 gap-x-2.5">
+              <p>
+                <i class="fa-solid fa-thumbs-up text-blue-500 text-lg"></i> 5
+              </p>
+              <p>Reply</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

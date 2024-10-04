@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced HTML Concepts</title>
+    <!-- Metadata: Provides information about the page -->
+    <meta
+      name="description"
+      content="Advanced HTML concepts, covering accessibility, APIs, SEO, microdata, and more."
+    />
+    <meta
+      name="keywords"
+      content="HTML, accessibility, SEO, ARIA, Web APIs, i18n"
+    />
+  </head>
+  <body>
+    <!-- 1. Accessibility (ARIA) -->
+    <h2>Accessibility with ARIA</h2>
+    <nav role="navigation" aria-label="Main Navigation">
+      <!-- 'role="navigation"' specifies the role of the element for screen readers, 'aria-label' provides a text description -->
+      <ul>
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+      </ul>
+    </nav>
+
+    <!-- ARIA Example with roles and labels for accessibility -->
+    <div
+      role="dialog"
+      aria-labelledby="modal-title"
+      aria-controls="modal-content"
+    >
+      <h3 id="modal-title">Dialog Title</h3>
+      <div id="modal-content">
+        <p>This is a modal dialog controlled by ARIA attributes.</p>
+      </div>
+      <button role="button" aria-label="Close dialog">Close</button>
+    </div>
+
+    <!-- 2. HTML5 APIs -->
+    <h2>HTML5 APIs</h2>
+
+    <!-- Geolocation API Example (requires JavaScript to interact) -->
+    <p id="geo-status">Click the button to get your location:</p>
+    <button onclick="getLocation()">Get Location</button>
+    <div id="location"></div>
+
+    <!-- Drag and Drop API Example -->
+    <h3>Drag and Drop Example</h3>
+    <div
+      id="drag-box"
+      draggable="true"
+      ondragstart="drag(event)"
+      style="
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
+        text-align: center;
+        line-height: 100px;
+      "
+    >
+      Drag me
+    </div>
+
+    <div
+      id="drop-area"
+      ondrop="drop(event)"
+      ondragover="allowDrop(event)"
+      style="
+        width: 200px;
+        height: 200px;
+        border: 2px dashed #000;
+        margin-top: 20px;
+      "
+    >
+      Drop here
+    </div>
+
+    <!-- Canvas API Example -->
+    <h3>Canvas Example</h3>
+    <canvas
+      id="myCanvas"
+      width="300"
+      height="200"
+      style="border: 1px solid black"
+    ></canvas>
+
+    <!-- 3. Custom Elements (Web Components) -->
+    <h2>Custom Elements (Web Components)</h2>
+
+    <!-- Define a custom element 'my-element' -->
+    <my-element></my-element>
+
+    <script>
+      // Define a new HTML element using Web Components
+      class MyElement extends HTMLElement {
+        constructor() {
+          super();
+          this.innerHTML =
+            "<p>This is a custom element defined using Web Components.</p>";
+        }
+      }
+
+      // Register the new element
+      customElements.define("my-element", MyElement);
+    </script>
+
+    <!-- 4. SEO Best Practices -->
+    <h2>SEO Best Practices</h2>
+
+    <h1>Primary Heading (H1)</h1>
+    <h2>Subheading (H2)</h2>
+    <p>
+      Ensure headings are used properly, with an <code>H1</code> for the main
+      heading and subsequent headings for section titles.
+    </p>
+
+    <!-- Alt text on images is important for accessibility and SEO -->
+    <img
+      src="https://via.placeholder.com/150"
+      alt="A placeholder image example"
+    />
+
+    <!-- Structured data with Schema.org -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "SEO Best Practices in HTML",
+        "author": "John Doe",
+        "datePublished": "2023-09-15"
+      }
+    </script>
+
+    <!-- 5. Microdata and Metadata -->
+    <h2>Microdata and Metadata</h2>
+
+    <div itemscope itemtype="https://schema.org/Product">
+      <h3 itemprop="name">Product Name</h3>
+      <p itemprop="description">This is a description of the product.</p>
+      <p>Price: <span itemprop="price">$29.99</span></p>
+    </div>
+
+    <!-- 6. Progressive Enhancement -->
+    <h2>Progressive Enhancement</h2>
+    <!-- The content will work even without CSS or JavaScript, but CSS and JS enhance it -->
+    <noscript>
+      <!-- Fallback for browsers without JavaScript -->
+      <p>
+        Your browser does not support JavaScript, but this content is still
+        visible.
+      </p>
+    </noscript>
+
+    <!-- Basic content that can be enhanced with CSS/JavaScript -->
+    <button>Click Me</button>
+
+    <script>
+      // JavaScript enhancement for button interaction
+      document.querySelector("button").addEventListener("click", () => {
+        alert("Button clicked! JavaScript is enhancing the experience.");
+      });
+    </script>
+
+    <!-- 7. Internationalization (i18n) -->
+    <h2>Internationalization (i18n)</h2>
+
+    <!-- Language attribute for different languages -->
+    <p lang="es">Hola, este texto está en español.</p>
+    <p lang="fr">Bonjour, ce texte est en français.</p>
+
+    <!-- Right-to-left text direction using 'dir' attribute -->
+    <p dir="rtl">هذا النص مكتوب من اليمين إلى اليسار.</p>
+
+    <!-- Character encoding (set in the head using UTF-8 for global language support) -->
+
+    <!-- Web APIs -->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/API -->
+  </body>
+</html>

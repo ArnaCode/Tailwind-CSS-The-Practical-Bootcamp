@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind CSS Essentials - Borders</title>
+  </head>
+  <body class="bg-slate-900">
+    <!-- 
+    --------------------------------
+    --------------------------------
+
+    Border Radius *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    rounded
+    rounded-md	          border-radius: 0.375rem; /* 6px */
+    rounded-lg	          border-radius: 0.5rem; /* 8px */
+    rounded-xl	          border-radius: 0.75rem; /* 12px */
+    rounded-2xl	          border-radius: 1rem; /* 16px */
+    rounded-3xl	          border-radius: 1.5rem; /* 24px */
+    rounded-full	        border-radius: 9999px;
+
+    --------------------------------
+    --------------------------------
+
+    Border Width *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    border-2	           border-width: 2px;
+    border-4	           border-width: 4px;
+    border-8	           border-width: 8px;
+
+    --------------------------------
+    --------------------------------
+
+    Border Color *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    border-white      	border-color: rgb(255 255 255);
+
+    --------------------------------
+    --------------------------------
+
+    Border Style *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    border-solid	      border-style: solid;
+    border-dashed	      border-style: dashed;
+    border-dotted	      border-style: dotted;
+    border-double	      border-style: double;
+    border-hidden	      border-style: hidden;
+    border-none	        border-style: none;
+
+    --------------------------------
+    --------------------------------
+
+    Divide Width *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    divide-x-2 > * + *	      border-right-width: 0px;
+                              border-left-width: 2px;
+                            
+    divide-x-4 > * + *	      border-right-width: 0px;
+                              border-left-width: 4px;
+
+    divide-y-2 > * + *	      border-top-width: 2px;
+                              border-bottom-width: 0px;
+
+    divide-y-4 > * + *	      border-top-width: 4px;
+                              border-bottom-width: 0px;
+
+    --------------------------------
+    --------------------------------
+
+    Divide Color *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    divide-white > * + *     	border-color: rgb(255 255 255);
+
+    --------------------------------
+    --------------------------------
+
+    Divide Style *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    divide-solid > * + *	    border-style: solid;
+    divide-dashed > * + *	    border-style: dashed;
+    divide-dotted > * + *	    border-style: dotted;
+    divide-double > * + *	    border-style: double;
+    divide-none > * + *	      border-style: none;
+
+    --------------------------------
+    --------------------------------
+    
+borderWidth changes width for divide as well
+
+module.exports = {
+  theme: {
+    extend: {
+      borderWidth: {
+        2: '2px',
+      },
+    },
+  },
+  plugins: [],
+}
+
+    --------------------------------
+    --------------------------------
+    -->
+    <ul
+      class="text-white text-xl bg-amber-600 px-12 py-8 m-8 border-2 border-white divide-y-2 divide-white"
+    >
+      <h1 class="text-3xl font-semibold mb-2">
+        Fun Facts About Animals That Will Blow Your Mind
+      </h1>
+      <li>Polar bears have black skin.</li>
+      <li>Chinese water deer swim island to island in search of food.</li>
+      <li>The bat is the only mammal that can fly.</li>
+      <li>Narwhal tusks are really an "inside out" tooth.</li>
+      <li>Gorillas can catch human colds and other illnesses.</li>
+      <li>A grizzly bear's bite is strong enough to crush a bowling ball.</li>
+      <li>Snakes only eat animals.</li>
+      <li>Pigeons can do math.</li>
+      <li>A group of ferrets is called a business.</li>
+      <li>A group of owls is called a parliament.</li>
+      <li>A group of rhinos is called a crash.</li>
+    </ul>
+  </body>
+</html>

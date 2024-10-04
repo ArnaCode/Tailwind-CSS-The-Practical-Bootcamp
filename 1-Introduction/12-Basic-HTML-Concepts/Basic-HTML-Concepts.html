@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Specifies that the document is written in HTML5 -->
+    <meta charset="UTF-8" />
+    <!-- Defines the character encoding as UTF-8, which supports most languages -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ensures the webpage is responsive by controlling the page's dimensions and scaling on different devices -->
+
+    <title>Beginner HTML Concepts</title>
+    <!-- The content inside the <title> tag appears on the browser tab -->
+  </head>
+  <body>
+    <!-- 1. What is HTML? -->
+    <!-- HTML (Hypertext Markup Language) is the standard markup language used to create web pages -->
+    <!-- Below is an example of how HTML structures the content -->
+
+    <!-- 2. Basic HTML Structure -->
+    <h1>Welcome to Basic HTML Structure</h1>
+    <!-- <h1> is the main heading of the page. It is the largest and most important heading -->
+
+    <p>
+      This is a basic HTML document that demonstrates the core structure of a
+      webpage.
+    </p>
+    <!-- <p> represents a paragraph of text on the page -->
+
+    <!-- 3. Common HTML Elements -->
+
+    <!-- Headings Example -->
+    <h2>HTML Headings</h2>
+    <!-- <h2> is a subheading below the main heading (h1), indicating a section heading -->
+
+    <h1>Main Heading (H1)</h1>
+    <!-- The most important heading, typically used for page titles -->
+
+    <h2>Subheading (H2)</h2>
+    <!-- A secondary heading used for organizing sections under the main heading -->
+
+    <h3>Sub-subheading (H3)</h3>
+    <!-- A lower-level heading, used for further divisions within sections -->
+
+    <h4>Fourth-level heading (H4)</h4>
+    <!-- A smaller heading level, often used for subheadings within sub-subheadings -->
+
+    <h5>Fifth-level heading (H5)</h5>
+    <!-- Rarely used, but provides an even deeper level of content structure -->
+
+    <h6>Sixth-level heading (H6)</h6>
+    <!-- The smallest heading, typically used for minor headings -->
+
+    <!-- Paragraphs Example -->
+    <h2>HTML Paragraphs</h2>
+    <p>
+      This is a paragraph of text in HTML. Paragraphs are used to separate
+      blocks of text.
+    </p>
+    <!-- <p> tags represent paragraphs of text. They automatically create space between blocks of text -->
+
+    <p>
+      This is another paragraph. Each paragraph is automatically separated by a
+      space.
+    </p>
+    <!-- Each <p> tag creates its own block of text with space between them -->
+
+    <!-- Links Example -->
+    <h2>HTML Links</h2>
+    <p>
+      Click the following link to visit
+      <a href="https://www.example.com">Example Website</a>.
+    </p>
+    <!-- <a> defines a hyperlink, with the 'href' attribute specifying the URL the link points to -->
+    <!-- In this case, the link text "Example Website" links to "https://www.example.com" -->
+
+    <!-- Images Example -->
+    <h2>HTML Images</h2>
+    <p>Here is an image embedded using the <code>img</code> tag:</p>
+    <!-- <img> embeds an image into the page, the 'src' attribute specifies the image source URL -->
+
+    <img src="https://via.placeholder.com/150" alt="Example Image" />
+    <!-- 'alt' attribute provides alternative text if the image fails to load, enhancing accessibility -->
+
+    <!-- Lists Example -->
+    <h2>HTML Lists</h2>
+
+    <!-- Unordered List (Bullet Points) Example -->
+    <h3>Unordered List</h3>
+    <ul>
+      <!-- <ul> represents an unordered list, where each list item is preceded by a bullet point -->
+      <li>Item 1</li>
+      <!-- <li> defines a list item within the unordered list -->
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+
+    <!-- Ordered List (Numbered List) Example -->
+    <h3>Ordered List</h3>
+    <ol>
+      <!-- <ol> represents an ordered list, where each list item is numbered -->
+      <li>First Item</li>
+      <!-- <li> defines a list item within the ordered list -->
+      <li>Second Item</li>
+      <li>Third Item</li>
+    </ol>
+
+    <!-- 4. Attributes Example -->
+    <h2>HTML Attributes</h2>
+    <p>
+      The <code>href</code> attribute specifies the URL for a link, and the
+      <code>src</code> attribute specifies the source of an image.
+    </p>
+    <!-- Attributes provide additional information about elements. For example, 'href' for links and 'src' for images -->
+
+    <!-- Adding id and class attributes to elements -->
+    <p id="paragraph1" class="highlight">
+      This paragraph has an ID and a class attribute.
+    </p>
+    <!-- The 'id' attribute assigns a unique identifier to an element. The 'class' attribute groups elements for styling or scripting -->
+
+    <p class="highlight">This paragraph shares the same class, "highlight".</p>
+    <!-- Multiple elements can share the same 'class' attribute, enabling consistent styling across those elements -->
+
+    <!-- Image with attributes -->
+    <img
+      src="https://via.placeholder.com/100"
+      alt="Another Example Image"
+      width="100"
+      height="100"
+    />
+    <!-- 'width' and 'height' attributes define the size of the image in pixels -->
+
+    <!-- 5. Semantic HTML Example -->
+    <h2>Semantic HTML</h2>
+    <!-- Semantic HTML introduces meaningful elements that clearly describe the structure of the page -->
+
+    <!-- Header Section Example -->
+    <header>
+      <h1>This is the header</h1>
+      <!-- The <header> element contains introductory content, such as a logo or navigation menu -->
+
+      <nav>
+        <!-- <nav> represents a navigation section containing links to different parts of the website -->
+        <ul>
+          <li><a href="#section1">Section 1</a></li>
+          <!-- Links to different sections of the page, using anchor links with IDs -->
+          <li><a href="#section2">Section 2</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Section 1 Example -->
+    <section id="section1">
+      <!-- <section> defines a thematic grouping of content. The 'id' allows linking to this section -->
+      <h2>Section 1</h2>
+
+      <article>
+        <!-- <article> is used for standalone, self-contained content -->
+        <h3>Article 1 in Section 1</h3>
+        <p>
+          This is an article within section 1. Articles are used for independent
+          pieces of content.
+        </p>
+      </article>
+
+      <article>
+        <h3>Article 2 in Section 1</h3>
+        <p>This is another article in section 1.</p>
+      </article>
+    </section>
+
+    <!-- Section 2 Example -->
+    <section id="section2">
+      <h2>Section 2</h2>
+      <p>This is the second section of the webpage.</p>
+      <!-- <section> groups related content, making it easier for users and search engines to understand -->
+    </section>
+
+    <!-- Footer Section Example -->
+    <footer>
+      <p>
+        This is the footer. It typically contains copyright information or links
+        to privacy policies.
+      </p>
+      <!-- <footer> defines the bottom section of the page, usually containing metadata or links -->
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output/output.css" />
+    <title>Tailwind CSS - Coding the Flex Layout</title>
+  </head>
+  <body class="bg-slate-600">
+    <!-- 
+    Order *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    ----------------------------------------------------------
+                        flex-row
+    order-1	                              order: 1;
+    order-2	                              order: 2;
+    order-3	                              order: 3;
+    order-4	                              order: 4;
+    order-5	                              order: 5;
+    order-6	                              order: 6;
+    order-7	                              order: 7;
+    order-8	                              order: 8;
+    order-9	                              order: 9;
+    order-10	                            order: 10;
+    order-11	                            order: 11;
+    order-12	                            order: 12;
+    order-first	                          order: -9999;
+    order-last	                          order: 9999;
+    order-none	                          order: 0;
+                        flex-col
+    ----------------------------------------------------------
+    -->
+
+    <section class="text-white">
+      <h1 class="text-xl font-semibold m-2 bg-sky-600 p-4 rounded">
+        Fun Facts About Animals That Will Blow Your Mind
+      </h1>
+      <div class="*:p-4 *:bg-green-600 *:rounded flex gap-4 flex-wrap">
+        <p class="order-1">Polar bears have black skin.</p>
+
+        <p class="-order-first">
+          Chinese water deer swim island to island in search of food.
+        </p>
+
+        <p class="order-first">The bat is the only mammal that can fly.</p>
+
+        <p class="-order-last">
+          Narwhal tusks are really an "inside out" tooth.
+        </p>
+
+        <p class="-order-1">
+          Gorillas can catch human colds and other illnesses.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

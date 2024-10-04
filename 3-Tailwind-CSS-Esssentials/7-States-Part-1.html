@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind CSS Essentials - States Part 1</title>
+  </head>
+  <body
+    class="bg-slate-900 h-screen flex flex-col justify-center items-center gap-y-6"
+  >
+    <button
+      class="text-white text-2xl px-8 py-4 border-2 rounded-s border-white transition hover:shadow-lg hover:shadow-slate-500 hover:-translate-y-1 hover:scale-105 active:bg-slate-500 active:text-slate-900"
+    >
+      Button
+    </button>
+
+    <form
+      class="flex flex-col gap-y-6 px-6 py-4 rounded transition focus-within:shadow-xl focus-within:shadow-slate-500 focus-within:scale-105 group"
+    >
+      <div class="flex flex-col gap-y-2">
+        <label class="text-white text-xl" for="name">Name</label>
+        <input
+          class="px-6 py-2 w-96 text-2xl rounded focus:bg-slate-500 focus:text-white focus:outline-none"
+          type="name"
+          required
+        />
+      </div>
+
+      <div class="flex flex-col gap-y-2">
+        <label class="text-white text-xl" for="cellphone">Cellphone</label>
+        <input
+          class="px-6 py-2 w-96 text-2xl rounded disabled:bg-rose-500 disabled:cursor-not-allowed disabled:opacity-50"
+          type="text"
+          disabled
+        />
+      </div>
+
+      <div class="flex flex-col gap-y-2">
+        <label class="text-white text-xl" for="email">Email</label>
+        <input
+          class="px-6 py-2 w-96 text-2xl rounded outline-none focus:bg-sky-500 focus:invalid:bg-red-400"
+          type="email"
+        />
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply dark:text-white;
+  }
+
+  a {
+    @apply dark:text-white rounded;
+  }
+
+  img {
+    @apply rounded h-full object-cover;
+  }
+}
+
+@layer components {
+  .component {
+    @apply flex flex-col gap-y-12 px-4 py-8 sm:py-20 sm:px-8 lg:px-12 2xl:rounded-2xl 2xl:my-8 2xl:border 2xl:border-blue;
+  }
+}

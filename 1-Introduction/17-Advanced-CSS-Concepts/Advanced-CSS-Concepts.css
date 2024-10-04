@@ -1,0 +1,128 @@
+/* 1. CSS Transitions and Animations */
+
+/* Transition Example */
+.transition-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s ease; /* Transitions background color over 0.5s */
+}
+
+.transition-button:hover {
+  background-color: green; /* On hover, background color smoothly changes to green */
+}
+
+/* Animation Example */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animation-box {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  margin: 20px;
+  animation: slide 3s infinite; /* The box slides left to right in a continuous loop */
+}
+
+/* 2. CSS Grid: Advanced Features */
+
+/* Named Grid Areas */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.header {
+  grid-area: header;
+  background-color: lightblue;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: lightgreen;
+}
+
+.content {
+  grid-area: content;
+  background-color: lightcoral;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: lightgray;
+}
+
+/* Auto-Fill and Auto-Fit with Minmax */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(150px, 1fr)
+  ); /* Grid adjusts columns based on available space */
+  gap: 10px;
+}
+
+/* 3. Pseudo-Classes and Pseudo-Elements */
+
+/* Pseudo-Class: Hover */
+.pseudo-link {
+  color: blue;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Adds a transition effect on hover */
+}
+
+.pseudo-link:hover {
+  color: red; /* Changes color to red when hovered */
+}
+
+/* Pseudo-Element: ::before */
+.pseudo-paragraph::before {
+  content: "Note: ";
+  font-weight: bold;
+  color: darkred;
+}
+
+/* 4. CSS Functions */
+
+/* CSS calc() function */
+.function-example {
+  width: calc(100% - 40px); /* The width is calculated dynamically */
+  background-color: lightyellow;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+/* 6. Specificity and Inheritance */
+
+/* Inheritance */
+#specificity-example {
+  font-family: Arial, sans-serif; /* The font-family is inherited by child elements */
+  color: black;
+}
+
+#specificity-example p {
+  color: red; /* Overrides the inherited black color for paragraphs */
+}
+
+/* Specificity Example: Inline styles override ID and class selectors */
+#specificity-example p {
+  font-size: 16px;
+  color: black;
+}

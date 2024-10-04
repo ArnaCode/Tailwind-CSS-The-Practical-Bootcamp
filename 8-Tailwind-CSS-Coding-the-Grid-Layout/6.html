@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output/output.css" />
+    <title>Tailwind CSS - Coding the Grid Layout</title>
+  </head>
+  <body class="bg-[#26355D]">
+    <!-- 
+    Grid Auto Columns *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    ----------------------------------------------------------
+    auto-cols-auto	              grid-auto-columns: auto;
+    auto-cols-min	                grid-auto-columns: min-content;
+    auto-cols-max	                grid-auto-columns: max-content;
+    auto-cols-fr	                grid-auto-columns: minmax(0, 1fr);
+    auto-cols-[250px]             grid-auto-columns: 250px;
+    ----------------------------------------------------------
+    -->
+
+    <section class="text-white">
+      <h1 class="text-xl font-semibold m-2 bg-[#FF8F00] p-4 rounded">
+        Fun Facts About Animals That Will Blow Your Mind
+      </h1>
+      <div
+        class="*:p-4 *:bg-[#AF47D2] *:rounded m-2 grid gap-2 grid-cols-[300px_200px_300px] grid-rows-[100px_150px_100px] grid-flow-col auto-cols-[250px]"
+      >
+        <p>Polar bears have black skin.</p>
+        <p>Chinese water deer swim island to island in search of food.</p>
+        <p>The bat is the only mammal that can fly.</p>
+        <p>Narwhal tusks are really an "inside out" tooth.</p>
+        <p>Gorillas can catch human colds and other illnesses.</p>
+        <p>A grizzly bear's bite is strong enough to crush a bowling ball.</p>
+        <p>Snakes only eat animals.</p>
+        <p>Pigeons can do math.</p>
+        <p>A group of ferrets is called a business.</p>
+        <p>A group of owls is called a parliament.</p>
+        <p>A group of rhinos is called a crash.</p>
+        <p>A group of owls is called a parliament.</p>
+        <p>A group of rhinos is called a crash.</p>
+        <p>A group of owls is called a parliament.</p>
+        <p>A group of rhinos is called a crash.</p>
+      </div>
+    </section>
+  </body>
+</html>

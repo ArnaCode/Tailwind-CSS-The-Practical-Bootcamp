@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 0deg 0% 14%;
+    --color-secondary: 0deg 0% 18%;
+    --color-accent: 3deg 74% 65%;
+    --color-text: 0deg 0% 100%;
+  }
+
+  img {
+    @apply rounded h-full object-cover;
+  }
+}
+
+@layer components {
+  .nav {
+    @apply flex flex-col gap-6 fixed rounded top-0 right-0 bg-accent/40 backdrop-blur-lg p-24 z-20 scale-y-0 origin-bottom transition-transform duration-300;
+  }
+
+  .nav.open {
+    @apply scale-y-100 origin-top;
+  }
+
+  .nav--link {
+    @apply py-2 text-lg relative transition-colors hover:text-secondary before:content-[''] before:absolute before:w-2/4 before:h-px hover:before:origin-left before:bg-secondary before:left-0 before:bottom-0 before:scale-x-0 hover:before:scale-x-100 before:origin-right before:transition-transform;
+  }
+
+  .hamburger {
+    @apply fixed bg-accent py-5 top-[30px] right-2/4 translate-x-2/4 h-8 w-12 z-30 rounded cursor-pointer before:content-[''] before:h-0.5 before:w-2/3 before:bg-text before:absolute before:top-4 before:left-2 after:content-[''] after:h-0.5 after:w-1/3 after:bg-text after:absolute after:top-6 after:left-2 before:transition after:transition;
+  }
+
+  .hamburger.close {
+    @apply before:rotate-45 before:translate-y-1 after:w-2/3 after:-rotate-45 after:-translate-y-1;
+  }
+
+  .before {
+    @apply before:absolute before:content-['']  before:rounded-full before:bg-accent;
+  }
+
+  .after {
+    @apply after:absolute after:content-['']  after:rounded-full after:bg-accent;
+  }
+}

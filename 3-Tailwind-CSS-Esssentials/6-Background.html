@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind CSS Essentials - Background</title>
+  </head>
+  <body class="bg-slate-900">
+    <!-- 
+    --------------------------------
+    --------------------------------
+
+    Background Size *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    bg-cover	            background-size: cover;
+    bg-contain	          background-size: contain;
+
+    --------------------------------
+    --------------------------------
+
+    Background Attachment *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    bg-fixed	            background-attachment: fixed;
+
+    --------------------------------
+    --------------------------------
+
+    Background Repeat *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    bg-no-repeat	       background-repeat: no-repeat;
+    bg-repeat-x	         background-repeat: repeat-x;
+    bg-repeat-y	         background-repeat: repeat-y;
+
+    --------------------------------
+    --------------------------------
+
+    Background Position *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    bg-bottom	            background-position: bottom;
+    bg-center	            background-position: center;
+    bg-left	              background-position: left;
+    bg-left-bottom	      background-position: left bottom;
+    bg-left-top	          background-position: left top;
+    bg-right	            background-position: right;
+    bg-right-bottom	      background-position: right bottom;
+    bg-right-top	        background-position: right top;
+    bg-top	              background-position: top;
+
+    --------------------------------
+    --------------------------------
+
+    Background Image *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    bg-gradient-to-t	
+    bg-gradient-to-tr	
+    bg-gradient-to-r	
+    bg-gradient-to-br	
+    bg-gradient-to-b	
+    bg-gradient-to-bl	
+    bg-gradient-to-l	
+    bg-gradient-to-tl	
+    
+    --------------------------------
+    --------------------------------
+    -->
+
+    <figure
+      class="h-[800px] w-[1200px] bg-contain"
+      style="
+        background-image: url('https://cdn.pixabay.com/photo/2024/03/04/16/38/cat-8612685_1280.jpg');
+      "
+    ></figure>
+
+    <figure
+      class="h-[800px] w-[1200px] bg-fixed"
+      style="
+        background-image: url('https://cdn.pixabay.com/photo/2024/03/25/20/30/german-shorthaired-pointer-8655457_1280.jpg');
+      "
+    ></figure>
+
+    <figure
+      class="h-[1200px] w-[1400px] bg-repeat-x"
+      style="
+        background-image: url('https://cdn.pixabay.com/photo/2024/05/29/07/31/rhino-8795538_1280.jpg');
+      "
+    ></figure>
+
+    <figure
+      class="h-[800px] w-[1200px] bg-top"
+      style="
+        background-image: url('https://cdn.pixabay.com/photo/2024/06/22/05/25/bear-8845470_1280.jpg');
+      "
+    ></figure>
+
+    <div
+      class="h-[50px] w-[1200px] mb-2 rounded bg-gradient-to-tr from-orange-500 to-green-400"
+    ></div>
+
+    <div
+      class="h-[50px] w-[1200px] mb-2 rounded bg-gradient-to-br from-slate-500 to-green-400"
+    ></div>
+
+    <div
+      class="h-[50px] w-[1200px] mb-2 rounded bg-gradient-to-bl from-zinc-900 to-green-400"
+    ></div>
+
+    <div
+      class="h-[50px] w-[1200px] mb-2 rounded bg-gradient-to-tl from-cyan-500 to-green-400"
+    ></div>
+
+    <div
+      class="h-[50px] w-[1200px] mb-2 rounded bg-gradient-to-r from-red-500 via-yellow-500 to-green-500"
+    ></div>
+
+    <!-- Fading to transparency -->
+    <div
+      class="h-[50px] w-[1200px] mb-2 rounded bg-gradient-to-r from-green-500"
+    ></div>
+  </body>
+</html>

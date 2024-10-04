@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output/output.css" />
+    <title>Tailwind CSS - Coding the Grid Layout</title>
+  </head>
+  <body class="bg-[#26355D]">
+    <!-- 
+    Grid Template Columns *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    ----------------------------------------------------------
+    grid-cols-1	                  grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-cols-2	                  grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-cols-3	                  grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-cols-4	                  grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-cols-5	                  grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-cols-6	                  grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-cols-7	                  grid-template-columns: repeat(7, minmax(0, 1fr));
+    grid-cols-8	                  grid-template-columns: repeat(8, minmax(0, 1fr));
+    grid-cols-9	                  grid-template-columns: repeat(9, minmax(0, 1fr));
+    grid-cols-10	                grid-template-columns: repeat(10, minmax(0, 1fr));
+    grid-cols-11	                grid-template-columns: repeat(11, minmax(0, 1fr));
+    grid-cols-12	                grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-cols-[250px_250px_250px]
+    grid-cols-[repeat(4,200px)]
+    grid-cols-[20%_30%_30%_20%]
+    grid-cols-[1fr_250px_1fr]
+    grid-cols-[min-content_max-content_min-content_max-content_min-content_1fr]
+    ----------------------------------------------------------
+    -->
+
+    <section class="text-white">
+      <h1 class="text-xl font-semibold m-2 bg-[#FF8F00] p-4 rounded">
+        Fun Facts About Animals That Will Blow Your Mind
+      </h1>
+      <div
+        class="*:p-4 *:bg-[#AF47D2] *:rounded m-2 grid grid-cols-[min-content_max-content_min-content_max-content_min-content_1fr]"
+      >
+        <p>Polar bears have black skin.</p>
+        <p>Chinese water deer swim island to island in search of food.</p>
+        <p>The bat is the only mammal that can fly.</p>
+        <p>Narwhal tusks are really an "inside out" tooth.</p>
+        <p>Gorillas can catch human colds and other illnesses.</p>
+        <p>A grizzly bear's bite is strong enough to crush a bowling ball.</p>
+        <p>Snakes only eat animals.</p>
+        <p>Pigeons can do math.</p>
+        <p>A group of ferrets is called a business.</p>
+        <p>A group of owls is called a parliament.</p>
+        <p>A group of rhinos is called a crash.</p>
+      </div>
+    </section>
+  </body>
+</html>

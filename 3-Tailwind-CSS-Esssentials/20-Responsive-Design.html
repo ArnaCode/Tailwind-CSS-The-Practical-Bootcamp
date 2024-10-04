@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind CSS Essentials - Responsive Design</title>
+  </head>
+  <body>
+    <!-- 
+    --------------------------------
+    --------------------------------
+
+    Responsive Design *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+    Breakpoint prefix        Minimum width     CSS
+    sm	                     640px	           @media (min-width: 640px) { ... }
+    md	                     768px	           @media (min-width: 768px) { ... }
+    lg	                     1024px	           @media (min-width: 1024px) { ... }
+    xl	                     1280px	           @media (min-width: 1280px) { ... }
+    2xl	                     1536px	           @media (min-width: 1536px) { ... }
+    --------------------------------
+    --------------------------------
+
+
+ module.exports = {
+  theme: {
+    screens: {
+      'tablet': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'laptop': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'desktop': '1280px',
+      // => @media (min-width: 1280px) { ... }
+    },
+  }
+}
+
+    -->
+
+    <div
+      class="h-96 bg-orange-400 sm:bg-cyan-400 md:bg-amber-400 lg:bg-slate-400 xl:bg-lime-400 2xl:bg-teal-400"
+    ></div>
+  </body>
+</html>

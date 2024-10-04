@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind CSS Essentials - Typography</title>
+  </head>
+  <body class="bg-slate-900">
+    <!-- 
+    --------------------------------
+    --------------------------------
+
+    Font Size *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    text-lg	            font-size: 1.125rem; /* 18px */
+                        line-height: 1.75rem; /* 28px */
+
+    text-3xl	          font-size: 1.875rem; /* 30px */
+                        line-height: 2.25rem; /* 36px */
+
+    --------------------------------
+    --------------------------------
+
+    Font Weight *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    font-thin	          font-weight: 100;
+    font-extralight	    font-weight: 200;
+    font-light	        font-weight: 300;
+    font-normal	        font-weight: 400;
+    font-medium	        font-weight: 500;
+    font-semibold	      font-weight: 600;
+    font-bold	          font-weight: 700;
+    font-extrabold	    font-weight: 800;
+    font-black	        font-weight: 900;
+
+    --------------------------------
+    --------------------------------
+
+    Font Family *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    font-sans	          font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",   "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    font-serif	        font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+    font-mono	          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+    --------------------------------
+    --------------------------------
+
+    Text Decoration *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    underline	          text-decoration-line: underline;
+    overline	          text-decoration-line: overline;
+    line-through	      text-decoration-line: line-through;
+    no-underline	      text-decoration-line: none;
+
+    --------------------------------
+    --------------------------------
+
+    List Style Type *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    list-none	          list-style-type: none;
+    list-disc	          list-style-type: disc;
+    list-decimal	      list-style-type: decimal;
+
+    --------------------------------
+    --------------------------------
+
+    Text Transform *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* => h1
+    uppercase	          text-transform: uppercase;
+    lowercase	          text-transform: lowercase;
+    capitalize	        text-transform: capitalize;
+    normal-case	        text-transform: none;
+
+    --------------------------------
+    --------------------------------
+
+    Text Align *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* => h1
+    text-left	          text-align: left;
+    text-center	        text-align: center;
+    text-right	        text-align: right;
+    text-justify	      text-align: justify;
+    text-start	        text-align: start;
+    text-end	          text-align: end;
+    
+    --------------------------------
+    --------------------------------
+    
+    module.exports = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Ga Maamli'],
+            },
+            fontSize: {
+              '2xl': '35px',
+              '3xl': '55px',
+              },
+              },
+              },
+              plugins: [],
+              }
+              
+    --------------------------------
+    --------------------------------
+    -->
+    <ul
+      class="text-white text-xl bg-amber-600 rounded px-12 py-8 m-8 font-sans list-disc"
+    >
+      <h1 class="text-3xl font-semibold mb-2 uppercase text-center">
+        Fun Facts About Animals That Will Blow Your Mind
+      </h1>
+      <li>Polar bears have black skin.</li>
+      <li>Chinese water deer swim island to island in search of food.</li>
+      <li>The bat is the only mammal that can fly.</li>
+      <li>Narwhal tusks are really an "inside out" tooth.</li>
+      <li>Gorillas can catch human colds and other illnesses.</li>
+      <li>A grizzly bear's bite is strong enough to crush a bowling ball.</li>
+      <li>Snakes only eat animals.</li>
+      <li>Pigeons can do math.</li>
+      <li>A group of ferrets is called a business.</li>
+      <li>A group of owls is called a parliament.</li>
+      <li>A group of rhinos is called a crash.</li>
+    </ul>
+
+    <a class="px-8 py-4 text-white inline-block line-through" href="#"
+      >Read More</a
+    >
+
+    <ul
+      class="text-white text-xl bg-amber-600 rounded px-12 py-8 m-8 font-serif list-decimal"
+    >
+      <h1 class="text-3xl font-semibold mb-2 lowercase">
+        Fun Facts About Animals That Will Blow Your Mind
+      </h1>
+      <li>Polar bears have black skin.</li>
+      <li>Chinese water deer swim island to island in search of food.</li>
+      <li>The bat is the only mammal that can fly.</li>
+      <li>Narwhal tusks are really an "inside out" tooth.</li>
+      <li>Gorillas can catch human colds and other illnesses.</li>
+      <li>A grizzly bear's bite is strong enough to crush a bowling ball.</li>
+      <li>Snakes only eat animals.</li>
+      <li>Pigeons can do math.</li>
+      <li>A group of ferrets is called a business.</li>
+      <li>A group of owls is called a parliament.</li>
+      <li>A group of rhinos is called a crash.</li>
+    </ul>
+
+    <ul
+      class="text-white text-xl bg-amber-600 rounded px-12 py-8 m-8 font-mono list-none"
+    >
+      <h1 class="text-3xl font-semibold mb-2 capitalize">
+        Fun Facts About Animals That Will Blow Your Mind
+      </h1>
+      <li>Polar bears have black skin.</li>
+      <li>Chinese water deer swim island to island in search of food.</li>
+      <li>The bat is the only mammal that can fly.</li>
+      <li>Narwhal tusks are really an "inside out" tooth.</li>
+      <li>Gorillas can catch human colds and other illnesses.</li>
+      <li>A grizzly bear's bite is strong enough to crush a bowling ball.</li>
+      <li>Snakes only eat animals.</li>
+      <li>Pigeons can do math.</li>
+      <li>A group of ferrets is called a business.</li>
+      <li>A group of owls is called a parliament.</li>
+      <li>A group of rhinos is called a crash.</li>
+    </ul>
+  </body>
+</html>

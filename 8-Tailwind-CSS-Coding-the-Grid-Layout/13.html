@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output/output.css" />
+    <title>Tailwind CSS - Coding the Grid Layout</title>
+  </head>
+  <body class="bg-[#26355D]">
+    <!-- 
+    Place Items *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    ----------------------------------------------------------
+    place-items-start	                      place-items: start;
+    place-items-end	                        place-items: end;
+    place-items-center	                    place-items: center;
+    place-items-baseline	                  place-items: baseline;
+    place-items-stretch	                    place-items: stretch;
+    ----------------------------------------------------------
+    -->
+
+    <section class="text-white">
+      <h1 class="text-xl font-semibold m-2 bg-[#FF8F00] p-4 rounded">
+        Fun Facts About Animals That Will Blow Your Mind
+      </h1>
+      <div
+        class="*:p-4 *:bg-[#AF47D2] *:rounded *:border-2 *:border-white m-2 grid grid-cols-[repeat(3,200px)] grid-rows-[repeat(3,150px)] gap-4 place-items-stretch"
+      >
+        <p>Item 1</p>
+        <p>Item 2</p>
+        <p>Item 3</p>
+        <p>Item 4</p>
+        <p>Item 5</p>
+        <p>Item 6</p>
+        <p>Item 7</p>
+        <p>Item 8</p>
+        <p>Item 9</p>
+      </div>
+    </section>
+  </body>
+</html>

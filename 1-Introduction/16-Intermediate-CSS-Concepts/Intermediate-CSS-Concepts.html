@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complete CSS Guide: Intermediate Concepts</title>
+    <link rel="stylesheet" href="Intermediate-CSS-Concepts.css" />
+  </head>
+  <body>
+    <!-- 1. Advanced Selectors -->
+    <h2>Advanced CSS Selectors</h2>
+
+    <!-- Child Selector: Targets direct child elements -->
+    <div class="parent">
+      <div class="child">This is a direct child</div>
+      <div>This is not a direct child</div>
+    </div>
+
+    <!-- Adjacent Sibling Selector: Targets an element immediately following a specific element -->
+    <h3 class="heading">Heading</h3>
+    <p class="adjacent-sibling">
+      This paragraph is immediately after the heading.
+    </p>
+
+    <!-- General Sibling Selector: Targets all sibling elements following a specific element -->
+    <h3 class="heading-general">Another Heading</h3>
+    <p class="general-sibling">This paragraph follows the heading.</p>
+    <p class="general-sibling">This is another sibling of the heading.</p>
+
+    <!-- Attribute Selector: Selects elements based on their attributes -->
+    <input type="text" placeholder="Type here..." required />
+    <input type="password" placeholder="Enter password" required />
+
+    <!-- Pseudo-Class Selector: Target an element based on its state -->
+    <a href="#" class="hover-link">Hover over this link</a>
+
+    <!-- Pseudo-Element Selector: Add content before or after elements -->
+    <p class="pseudo-before">This paragraph has a ::before pseudo-element.</p>
+
+    <!-- 2. CSS Variables (Custom Properties) -->
+    <h2>CSS Variables (Custom Properties)</h2>
+    <div class="box">
+      This box uses CSS variables for background color, padding, and text color.
+    </div>
+
+    <!-- 3. Responsive Design -->
+    <h2>Responsive Design</h2>
+    <div class="responsive-box">
+      Resize the window to see responsive behavior.
+    </div>
+
+    <!-- 4. Flexbox Layout -->
+    <h2>Flexbox Layout</h2>
+    <div class="flex-container">
+      <div class="flex-item">Flex Item 1</div>
+      <div class="flex-item">Flex Item 2</div>
+      <div class="flex-item">Flex Item 3</div>
+    </div>
+
+    <!-- 5. Grid Layout -->
+    <h2>Grid Layout</h2>
+    <div class="grid-container">
+      <div class="grid-item">Grid Item 1</div>
+      <div class="grid-item">Grid Item 2</div>
+      <div class="grid-item">Grid Item 3</div>
+      <div class="grid-item">Grid Item 4</div>
+    </div>
+  </body>
+</html>

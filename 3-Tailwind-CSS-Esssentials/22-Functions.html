@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind CSS Essentials - Functions</title>
+  </head>
+  <body>
+    <!-- 
+    theme() *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    
+    If you need to access a value that contains a dot (like the 2.5 value in the spacing scale), you can use square bracket notation *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    .content-area {
+      height: calc(100vh - theme(spacing[2.5]));
+      }
+    --------------------------------
+    --------------------------------
+    
+    Don’t use the dash syntax when accessing nested color values *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    .btn-blue {
+      background-color: theme(colors.blue-500);
+      }
+    --------------------------------
+    --------------------------------
+    
+    
+    Use dot notation to access nested color values *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    .btn-blue {
+      background-color: theme(colors.blue.500);
+      }
+    --------------------------------
+    --------------------------------
+
+    To adjust the opacity of a color retrieved with theme, use a slash followed by the opacity value you want to use *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    .btn-blue {
+      background-color: theme(colors.blue.500 / 75%);
+    }
+
+    --------------------------------
+    --------------------------------
+
+    *-*-*-*-*-*- CSS File
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+    
+    button {
+      font-size: theme(fontSize.2xl);
+      color: theme(textColor.white);
+      background-color: theme(backgroundColor.slate.900);
+      padding: theme(padding.4) theme(padding.6);
+      margin: theme(margin.4);
+      border-radius: theme(borderRadius.md);
+      border-width: theme(borderWidth.DEFAULT);
+      border-color: theme(borderColor.slate.700);
+      }
+    -->
+    <button>Submit</button>
+    <!-- 
+    
+    screen() *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+    *-*-*-*-*-*- CSS File
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    @media screen(sm) {
+      body {
+        background-color: lightCoral;
+      }
+    }
+
+   *-*-*-*-*-*- Config File
+   /** @type {import('tailwindcss').Config} */
+    module.exports = {
+      theme: {
+        extend: {
+          screens: {
+            sm: "450px"
+          },
+        },
+      },
+      plugins: [],
+    }
+    -->
+  </body>
+</html>

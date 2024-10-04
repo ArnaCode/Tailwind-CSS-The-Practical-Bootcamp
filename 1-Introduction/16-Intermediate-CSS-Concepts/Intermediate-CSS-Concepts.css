@@ -1,0 +1,115 @@
+/* 1. Advanced Selectors */
+
+/* Child Selector: Targets only the direct child of an element */
+.parent > .child {
+  background-color: lightblue; /* Changes background color of the direct child */
+  padding: 10px; /* Adds padding inside the child element */
+  margin-bottom: 10px; /* Adds margin to separate elements */
+}
+
+/* Adjacent Sibling Selector: Targets the element that is immediately following the heading */
+.heading + .adjacent-sibling {
+  color: red; /* Changes the text color of the immediately following sibling */
+  font-weight: bold; /* Makes the text bold */
+}
+
+/* General Sibling Selector: Targets all elements that are siblings of a specific element */
+.heading-general ~ .general-sibling {
+  color: green; /* Changes text color for all siblings of the heading */
+}
+
+/* Attribute Selector: Selects elements with specific attributes */
+input[required] {
+  border: 2px solid blue; /* Adds a blue border around required inputs */
+  padding: 5px; /* Adds padding inside the input fields */
+}
+
+/* Pseudo-Class Selector: Styles an element when hovered */
+a.hover-link:hover {
+  color: orange; /* Changes text color to orange when hovered */
+  text-decoration: underline; /* Underlines the link on hover */
+}
+
+/* Pseudo-Element Selector: Adds content before the element */
+p.pseudo-before::before {
+  content: "Note: "; /* Inserts 'Note:' before the paragraph */
+  font-weight: bold; /* Makes the inserted content bold */
+  color: darkred; /* Colors the inserted content dark red */
+}
+
+/* 2. CSS Variables (Custom Properties) */
+
+/* Define custom properties at the root level for reuse */
+:root {
+  --main-bg-color: lightcoral; /* Main background color */
+  --main-text-color: white; /* Main text color */
+  --main-padding: 20px; /* Padding size */
+}
+
+.box {
+  background-color: var(
+    --main-bg-color
+  ); /* Uses the custom property for background color */
+  color: var(--main-text-color); /* Uses the custom property for text color */
+  padding: var(--main-padding); /* Uses the custom property for padding */
+  font-size: 18px; /* Sets the font size */
+  text-align: center; /* Centers the text */
+}
+
+/* 3. Responsive Design */
+
+/* Media Query for screens larger than 768px */
+@media (min-width: 768px) {
+  .responsive-box {
+    background-color: lightgreen; /* Changes background color on larger screens */
+    padding: 30px; /* Adds more padding */
+    font-size: 20px; /* Increases font size */
+  }
+}
+
+/* Media Query for screens smaller than 768px */
+@media (max-width: 767px) {
+  .responsive-box {
+    background-color: lightpink; /* Changes background color on smaller screens */
+    padding: 15px; /* Reduces padding */
+    font-size: 16px; /* Decreases font size */
+  }
+}
+
+/* 4. Flexbox Layout */
+
+/* Container setup */
+.flex-container {
+  display: flex; /* Activates flexbox layout */
+  justify-content: space-around; /* Distributes items evenly */
+  align-items: center; /* Aligns items vertically */
+  height: 200px; /* Sets the height of the flex container */
+  background-color: lightgray; /* Sets the background color */
+}
+
+.flex-item {
+  background-color: coral; /* Sets background color for each flex item */
+  color: white; /* Changes text color to white */
+  padding: 20px; /* Adds padding inside the flex items */
+  margin: 10px; /* Adds margin between flex items */
+  flex-grow: 1; /* Allows flex items to grow and fill available space */
+  text-align: center; /* Centers text inside flex items */
+}
+
+/* 5. Grid Layout */
+
+/* Grid container setup */
+.grid-container {
+  display: grid; /* Activates grid layout */
+  grid-template-columns: repeat(2, 1fr); /* Creates two equal-width columns */
+  gap: 20px; /* Adds spacing between grid items */
+  background-color: lightblue; /* Sets background color for the grid container */
+  padding: 20px; /* Adds padding inside the grid container */
+}
+
+.grid-item {
+  background-color: darkblue; /* Sets background color for each grid item */
+  color: white; /* Changes text color to white */
+  padding: 20px; /* Adds padding inside grid items */
+  text-align: center; /* Centers text in each grid item */
+}

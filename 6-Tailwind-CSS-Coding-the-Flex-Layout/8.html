@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output/output.css" />
+    <title>Tailwind CSS - Coding the Flex Layout</title>
+  </head>
+  <body class="bg-slate-600">
+    <!-- 
+    Align Content *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    ----------------------------------------------------------
+                        flex-row
+    content-normal	                  align-content: normal;
+    content-center	                  align-content: center;
+    content-start	                    align-content: flex-start;
+    content-end	                      align-content: flex-end;
+    content-between	                  align-content: space-between;
+    content-around	                  align-content: space-around;
+    content-evenly	                  align-content: space-evenly;
+    content-baseline	                align-content: baseline;
+    content-stretch	                  align-content: stretch;
+                        flex-col
+    ----------------------------------------------------------
+    -->
+
+    <section class="text-white">
+      <h1 class="text-xl font-semibold m-2 bg-sky-600 p-4 rounded">
+        Fun Facts About Animals That Will Blow Your Mind
+      </h1>
+      <div
+        class="*:p-4 *:bg-green-600 *:rounded h-screen flex gap-4 flex-wrap content-evenly"
+      >
+        <p>Polar bears have black skin.</p>
+        <p>Chinese water deer swim island to island in search of food.</p>
+        <p>The bat is the only mammal that can fly.</p>
+        <p>Narwhal tusks are really an "inside out" tooth.</p>
+        <p>Gorillas can catch human colds and other illnesses.</p>
+        <p>A grizzly bear's bite is strong enough to crush a bowling ball.</p>
+        <p>Snakes only eat animals.</p>
+        <p>Pigeons can do math.</p>
+        <p>A group of ferrets is called a business.</p>
+        <p>A group of owls is called a parliament.</p>
+        <p>A group of rhinos is called a crash.</p>
+      </div>
+    </section>
+  </body>
+</html>

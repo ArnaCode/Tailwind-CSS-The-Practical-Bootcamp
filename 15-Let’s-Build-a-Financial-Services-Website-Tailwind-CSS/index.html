@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/svg" href="images/favicon.svg" />
+
+    <link rel="stylesheet" href="./output/output.css" />
+    <title>FNX</title>
+  </head>
+  <body
+    class="duration-200 2xl:max-w-screen-2xl 2xl:mx-auto dark:bg-primary-900"
+  >
+    <!-- -------------------------- Header -->
+    <header class="component">
+      <nav
+        class="flex flex-col gap-5 *:flex *:flex-col *:gap-y-2 *:text-center sm:justify-between sm:*:items-center sm:*:gap-x-5 md:flex-row md:w-5/6 2xl:w-auto"
+      >
+        <div class="sm:flex-row">
+          <a class="py-2 text-2xl font-bold" href="#">FNX</a>
+          <p>Individual</p>
+          <p>Business</p>
+        </div>
+
+        <div class="sm:flex-row-reverse sm:justify-end md:flex-row">
+          <a href="#"
+            ><i class="fa-solid fa-location-dot"></i> <span>Location</span></a
+          >
+          <p class="text-primary-500">1-500-123-4567</p>
+          <a
+            class="self-center border-2 border-primary-900 px-6 py-2 text-lg dark:border-white"
+            href="#"
+            >Login</a
+          >
+        </div>
+      </nav>
+
+      <!-- -------------------------- Dark Mode -->
+      <div
+        class="absolute right-6 top-12 sm:right-8 sm:top-24 lg:right-12 2xl:top-32 2xl:left-2/4"
+      >
+        <input
+          class="cursor-pointer relative appearance-none h-6 w-14 rounded-full bg-primary-400 duration-500 before:absolute before:h-6 before:w-6 before:bg-primary-900 before:rounded-full before:scale-110 checked:before:translate-x-8 before:duration-300 checked:before:bg-slate-300 checked:bg-slate-900"
+          type="checkbox"
+        />
+      </div>
+
+      <!-- -------------------------- Showcase -->
+      <section class="grid items-center gap-y-8 md:grid-cols-2">
+        <div class="flex flex-col gap-y-5">
+          <h1 class="text-4xl font-bold md:text-6xl">The Future of Finance</h1>
+          <p class="text-lg">The best way to invest your money</p>
+          <a
+            class="bg-green px-6 py-2 text-center text-lg text-white shadow-md shadow-green sm:self-start"
+            href="#"
+          >
+            Get Started
+          </a>
+        </div>
+
+        <figure>
+          <img src="images/showcase.svg" alt="" />
+        </figure>
+
+        <img
+          class="absolute -z-10 h-96 w-32 hidden md:block dark:hidden"
+          src="images/showcase-design.png"
+          alt=""
+        />
+      </section>
+    </header>
+
+    <main>
+      <!-- -------------------------- About -->
+      <section class="component *:flex *:flex-col *:gap-y-5 md:*:gap-y-2">
+        <div>
+          <h2 class="text-2xl font-bold md:text-center">
+            A New Take on Finance
+          </h2>
+          <p class="md:w-2/4 md:mx-auto md:text-center dark:text-primary-500">
+            We are a team of passionate people whose goal is to improve
+            everyone's life through disruptive products. We build great products
+            to solve your business problems.
+          </p>
+        </div>
+
+        <div class="md:flex-row-reverse md:*:basis-2/4">
+          <div class="flex flex-col gap-y-8 md:self-center">
+            <div class="flex flex-col gap-y-3">
+              <h3 class="text-xl font-semibold text-blue">More About Us</h3>
+              <p class="text-orange">Great for individuals and Businesses.</p>
+              <p class="dark:text-primary-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                perspiciatis mollitia ratione delectus vitae repellat, sequi aut
+                voluptatibus adipisci natus corporis maiores .
+              </p>
+            </div>
+
+            <div class="flex flex-col gap-y-5 md:gap-y-10">
+              <div
+                class="grid gap-y-2 md:grid-cols-[85px_1fr] md:grid-rows-[repeat(2,auto)] md:gap-x-4"
+              >
+                <figure
+                  class="md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-3"
+                >
+                  <img src="images/tick.png" alt="" />
+                </figure>
+                <h4
+                  class="text-lg font-semibold text-orange md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2"
+                >
+                  Comprehensive Finance
+                </h4>
+                <p class="dark:text-primary-600">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+
+              <div
+                class="grid gap-y-2 md:grid-cols-[85px_1fr] md:grid-rows-[repeat(2,auto)] md:gap-x-4"
+              >
+                <figure
+                  class="md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-3"
+                >
+                  <img src="images/tick.png" alt="" />
+                </figure>
+                <h4
+                  class="text-lg font-semibold text-orange md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2"
+                >
+                  Support is just a call away
+                </h4>
+                <p class="dark:text-primary-600">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+
+              <div
+                class="grid gap-y-2 md:grid-cols-[85px_1fr] md:grid-rows-[repeat(2,auto)] md:gap-x-4"
+              >
+                <figure
+                  class="md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-3"
+                >
+                  <img src="images/tick.png" alt="" />
+                </figure>
+                <h4
+                  class="text-lg font-semibold text-orange md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2"
+                >
+                  Say goodbye to paperwork
+                </h4>
+                <p class="dark:text-primary-600">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <figure class="relative">
+            <img
+              class="md:[transform:rotateY(0.5turn)]"
+              src="images/about.svg"
+              alt=""
+            />
+            <img
+              class="absolute left-0 top-1/4 -z-10 hidden md:block h-96 w-1/3 dark:hidden"
+              src="images/about-design.png"
+              alt=""
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- -------------------------- Features -->
+      <section class="component bg-primary-300 dark:bg-primary-900">
+        <div class="flex flex-col gap-y-5 md:gap-y-3">
+          <h2 class="text-center text-2xl font-bold">
+            Different Finances for Different Needs
+          </h2>
+          <p class="text-center dark:text-primary-500">
+            Lorem ipsum dolor sit amet elit adipisicing elit.
+          </p>
+        </div>
+
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div
+            class="flex flex-col gap-y-4 items-center bg-white rounded px-4 py-8 dark:border-2 dark:border-primary-500 dark:bg-primary-900"
+          >
+            <figure>
+              <img
+                class="size-28 rounded-full bg-blue/10 p-4 dark:bg-transparent"
+                src="images/home-finance.svg"
+                alt=""
+              />
+            </figure>
+
+            <h4 class="text-lg font-semibold text-primary-900 dark:text-white">
+              Home Finance
+            </h4>
+
+            <p class="text-center dark:text-primary-600">
+              Lorem ipsum dolor, sit amet adipisicing elit.
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col gap-y-4 items-center bg-white rounded px-4 py-8 dark:border-2 dark:border-primary-500 dark:bg-primary-900"
+          >
+            <figure>
+              <img
+                class="size-28 rounded-full bg-orange/10 p-4 dark:bg-transparent"
+                src="images/car-finance.svg"
+                alt=""
+              />
+            </figure>
+
+            <h4 class="text-lg font-semibold text-primary-900 dark:text-white">
+              Car Finance
+            </h4>
+
+            <p class="text-center dark:text-primary-600">
+              Lorem ipsum dolor, sit amet adipisicing elit.
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col gap-y-4 items-center bg-white rounded px-4 py-8 dark:border-2 dark:border-primary-500 dark:bg-primary-900"
+          >
+            <figure>
+              <img
+                class="size-28 rounded-full bg-green/10 p-4 dark:bg-transparent"
+                src="images/life-finance.svg"
+                alt=""
+              />
+            </figure>
+
+            <h4 class="text-lg font-semibold text-primary-900 dark:text-white">
+              Life Finance
+            </h4>
+
+            <p class="text-center dark:text-primary-600">
+              Lorem ipsum dolor, sit amet adipisicing elit.
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col gap-y-4 items-center bg-white rounded px-4 py-8 dark:border-2 dark:border-primary-500 dark:bg-primary-900"
+          >
+            <figure>
+              <img
+                class="size-28 rounded-full bg-blue/10 p-4 dark:bg-transparent"
+                p-4
+                dark:bg-transparent
+                src="images/business-finance.svg"
+                alt=""
+              />
+            </figure>
+
+            <h4 class="text-lg font-semibold text-primary-900 dark:text-white">
+              Business Finance
+            </h4>
+
+            <p class="text-center dark:text-primary-600">
+              Lorem ipsum dolor, sit amet adipisicing elit.
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col gap-y-4 items-center bg-white rounded px-4 py-8 dark:border-2 dark:border-primary-500 dark:bg-primary-900"
+          >
+            <figure>
+              <img
+                class="size-28 rounded-full bg-orange/10 p-4 dark:bg-transparent"
+                p-4
+                dark:bg-transparent
+                src="images/travel-finance.svg"
+                alt=""
+              />
+            </figure>
+
+            <h4 class="text-lg font-semibold text-primary-900 dark:text-white">
+              Travel Finance
+            </h4>
+
+            <p class="text-center dark:text-primary-600">
+              Lorem ipsum dolor, sit amet adipisicing elit.
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col gap-y-4 items-center bg-white rounded px-4 py-8 dark:border-2 dark:border-primary-500 dark:bg-primary-900"
+          >
+            <figure>
+              <img
+                class="size-28 rounded-full bg-green/10 p-4 dark:bg-transparent"
+                p-4
+                dark:bg-transparent
+                src="images/other-finance.svg"
+                alt=""
+              />
+            </figure>
+
+            <h4 class="text-lg font-semibold text-primary-900 dark:text-white">
+              Other Finance
+            </h4>
+
+            <p class="text-center dark:text-primary-600">
+              Lorem ipsum dolor, sit amet adipisicing elit.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- -------------------------- Process -->
+      <section class="component">
+        <div class="flex flex-col gap-y-5 md:gap-y-3">
+          <h2 class="text-center text-2xl font-bold">Simplified Process</h2>
+          <p class="text-center dark:text-primary-500">
+            Easy as One, Two, Three
+          </p>
+        </div>
+
+        <div class="grid gap-12 md:grid-cols-3">
+          <div
+            class="flex flex-col gap-y-4 items-center rounded px-4 py-8 bg-green/50 p-4 dark:border-2 dark:border-green/50 dark:bg-transparent"
+          >
+            <p
+              class="size-12 rounded-full bg-green/50 flex justify-center items-center dark:border-2 dark:border-green/50 dark:bg-transparent"
+            >
+              1
+            </p>
+            <h4 class="text-lg font-semibold text-primary-900 dark:text-white">
+              Step One
+            </h4>
+
+            <p class="text-center dark:text-primary-600">
+              Lorem ipsum dolor, sit amet adipisicing elit.
+            </p>
+          </div>
+
+          <figure class="my-4 scale-150 justify-self-center md:my-auto">
+            <img
+              class="rotate-90 md:rotate-0"
+              src="images/after-blue.png"
+              alt=""
+            />
+          </figure>
+
+          <div
+            class="flex flex-col gap-y-4 items-center rounded px-4 py-8 bg-blue/50 p-4 dark:border-2 dark:border-blue/50 dark:bg-transparent"
+          >
+            <p
+              class="size-12 rounded-full bg-blue/50 flex justify-center items-center dark:border-2 dark:border-blue/50 dark:bg-transparent"
+            >
+              2
+            </p>
+            <h4 class="text-lg font-semibold text-primary-900 dark:text-white">
+              Step Two
+            </h4>
+
+            <p class="text-center dark:text-primary-600">
+              Lorem ipsum dolor, sit amet adipisicing elit.
+            </p>
+          </div>
+
+          <figure class="my-4 scale-150 justify-self-center md:my-auto">
+            <img
+              class="rotate-90 md:rotate-0"
+              src="images/after-pink.png"
+              alt=""
+            />
+          </figure>
+
+          <div
+            class="flex flex-col gap-y-4 items-center rounded px-4 py-8 bg-orange/50 p-4 dark:border-2 dark:border-orange/50 dark:bg-transparent"
+          >
+            <p
+              class="size-12 rounded-full bg-orange/50 flex justify-center items-center dark:border-2 dark:border-orange/50 dark:bg-transparent"
+            >
+              3
+            </p>
+            <h4 class="text-lg font-semibold text-primary-900 dark:text-white">
+              Step Three
+            </h4>
+
+            <p class="text-center dark:text-primary-600">
+              Lorem ipsum dolor, sit amet adipisicing elit.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- -------------------------- Testimonial -->
+      <section
+        class="component bg-primary-300 dark:bg-primary-900 md:flex-row md:gap-x-12 md:*:basis-2/4"
+      >
+        <div class="flex flex-col gap-5 md:self-center">
+          <figure>
+            <img src="images/quote.png" alt="" />
+          </figure>
+
+          <p class="font-semibold xl:text-xl">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et aperiam
+            ipsum doloremque tempore blanditiis, velit nulla quam amet pariatur.
+            Vero expedita in harum maiores nostrum dolor, libero veritatis
+            excepturi eveniet.
+          </p>
+
+          <div>
+            <h5 class="text-blue font-bold">Jane Doe</h5>
+            <p>Legal Consultant, XYZ Corps.</p>
+          </div>
+        </div>
+
+        <figure>
+          <img src="images/testimonial.png" alt="" />
+        </figure>
+      </section>
+
+      <!-- -------------------------- CTA -->
+      <section
+        class="bg-green px-4 py-8 sm:px-8 sm:py-20 lg:px-12 2xl:my-8 2xl:rounded-2xl dark:bg-primary-900"
+      >
+        <div
+          class="flex max-w-screen-sm flex-col items-center gap-y-8 rounded bg-primary-300 p-8 shadow-md shadow-green md:relative md:mx-auto md:flex-row md:items-center md:justify-center md:gap-x-6 dark:bg-primary-900"
+        >
+          <figure
+            class="w-24 md:absolute md:-left-12 md:top-2/4 md:-translate-y-2/4"
+          >
+            <img src="images/shield-green.svg" alt="" />
+          </figure>
+
+          <div class="space-y-2">
+            <h2 class="text-2xl font-bold text-center">
+              Secure Your Future Today
+            </h2>
+            <p class="text-center dark:text-primary-500">
+              Lorem ipsum dolor sit amet consectetur elit.
+            </p>
+          </div>
+
+          <a class="border-2 border-green px-6 py-2" href="#"> Get Started </a>
+        </div>
+      </section>
+
+      <!-- -------------------------- Pricing -->
+      <section class="component bg-primary-300 dark:bg-primary-900">
+        <div class="flex flex-col gap-y-4 md:gap-y-3">
+          <h2 class="text-center text-2xl font-bold">Pricing</h2>
+          <p class="text-center dark:text-primary-500">No Hidden Fees</p>
+        </div>
+
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div
+            class="flex flex-col gap-y-8 roudned p-8 bg-white dark:border-2 dark:border-green dark:bg-primary-900 dark:shadow-md dark:shadow-green"
+          >
+            <h6 class="text-green self-center uppercase">Basic</h6>
+            <h5
+              class="bg-green/40 self-center rounded-full size-24 flex items-center justify-center gap-x-1 text-2xl font-bold text-primary-600 dark:text-white"
+            >
+              <sup class="text-green">$</sup>9.99
+            </h5>
+
+            <ul class="flex flex-col gap-y-4 *:flex *:items-center *:gap-x-4">
+              <li>
+                <span
+                  class="fas fa-check rounded-full bg-green/40 text-green p-2"
+                ></span
+                >Feature 1
+              </li>
+              <li>
+                <span
+                  class="fas fa-check rounded-full bg-green/40 text-green p-2"
+                ></span
+                >Feature 2
+              </li>
+              <li>
+                <span
+                  class="fas fa-check rounded-full bg-green/40 text-green p-2"
+                ></span
+                >Feature 3
+              </li>
+              <li>
+                <span
+                  class="fas fa-check rounded-full bg-green/40 text-green p-2"
+                ></span
+                >Feature 4
+              </li>
+            </ul>
+
+            <a class="border-2 border-green px-4 py-2 text-center" href="#"
+              >Choose Plan</a
+            >
+          </div>
+
+          <div
+            class="flex flex-col gap-y-8 roudned p-8 bg-white dark:border-2 dark:border-orange dark:bg-primary-900 dark:shadow-md dark:shadow-orange lg:scale-110"
+          >
+            <h6 class="text-orange self-center uppercase">Professional</h6>
+
+            <h5
+              class="bg-orange/40 self-center rounded-full size-24 flex items-center justify-center gap-x-1 text-2xl font-bold text-primary-600 dark:text-white"
+            >
+              <sup class="text-orange">$</sup>12.99
+            </h5>
+
+            <ul class="flex flex-col gap-y-4 *:flex *:items-center *:gap-x-4">
+              <li>
+                <span
+                  class="fas fa-check rounded-full bg-orange/40 text-orange p-2"
+                ></span
+                >Feature 1
+              </li>
+              <li>
+                <span
+                  class="fas fa-check rounded-full bg-orange/40 text-orange p-2"
+                ></span
+                >Feature 2
+              </li>
+              <li>
+                <span
+                  class="fas fa-check rounded-full bg-orange/40 text-orange p-2"
+                ></span
+                >Feature 3
+              </li>
+              <li>
+                <span
+                  class="fas fa-check rounded-full bg-orange/40 text-orange p-2"
+                ></span
+                >Feature 4
+              </li>
+            </ul>
+
+            <a class="border-2 border-orange px-4 py-2 text-center" href="#"
+              >Choose Plan</a
+            >
+          </div>
+
+          <div
+            class="flex flex-col gap-y-8 roudned p-8 bg-white dark:border-2 dark:border-blue dark:bg-primary-900 dark:shadow-md dark:shadow-blue sm:flex-row sm:col-span-2 sm:justify-between lg:flex-col lg:col-span-1"
+          >
+            <h6 class="text-blue self-center uppercase">Premium</h6>
+            <h5
+              class="bg-blue/40 self-center rounded-full size-24 flex items-center justify-center gap-x-1 text-2xl font-bold text-primary-600 dark:text-white"
+            >
+              <sup class="text-blue">$</sup>19.99
+            </h5>
+
+            <ul class="flex flex-col gap-y-4 *:flex *:items-center *:gap-x-4">
+              <li>
+                <span
+                  class="fas fa-check rounded-full bg-blue/40 text-blue p-2"
+                ></span
+                >Feature 1
+              </li>
+              <li>
+                <span
+                  class="fas fa-check rounded-full bg-blue/40 text-blue p-2"
+                ></span
+                >Feature 2
+              </li>
+              <li>
+                <span
+                  class="fas fa-check rounded-full bg-blue/40 text-blue p-2"
+                ></span
+                >Feature 3
+              </li>
+              <li>
+                <span
+                  class="fas fa-check rounded-full bg-blue/40 text-blue p-2"
+                ></span
+                >Feature 4
+              </li>
+            </ul>
+
+            <a
+              class="border-2 border-blue px-4 py-2 text-center sm:self-center"
+              href="#"
+              >Choose Plan</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- -------------------------- Q&A -->
+      <section
+        class="px-4 py-8 sm:py-20 sm:px-8 lg:px-12 2xl:rounded-2xl 2xl:my-8 2xl:border 2xl:border-blue"
+      >
+        <div class="grid gap-8 md:grid-cols-2">
+          <div
+            class="flex flex-col gap-y-4 p-8 bg-primary-300 rounded dark:bg-primary-900 dark:border-2 dark:border-green dark:shadow-md dark:shadow-green"
+          >
+            <h6 class="text-center uppercase text-green">How do I start?</h6>
+            <p class="text-center dark:text-primary-500">
+              Lorem ipsum dolor, sit amet adipisicing elit.
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col gap-y-4 p-8 bg-primary-300 rounded dark:bg-primary-900 dark:border-2 dark:border-orange dark:shadow-md dark:shadow-orange"
+          >
+            <h6 class="text-center uppercase text-orange">Is my money safe?</h6>
+            <p class="text-center dark:text-primary-500">
+              Lorem ipsum dolor, sit amet adipisicing elit.
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col gap-y-4 p-8 bg-primary-300 rounded dark:bg-primary-900 dark:border-2 dark:border-blue dark:shadow-md dark:shadow-blue"
+          >
+            <h6 class="text-center uppercase text-blue">
+              Can I cancel anytime?
+            </h6>
+            <p class="text-center dark:text-primary-500">
+              Lorem ipsum dolor, sit amet adipisicing elit.
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col gap-y-4 p-8 bg-primary-300 rounded dark:bg-primary-900 dark:border-2 dark:border-green dark:shadow-md dark:shadow-green"
+          >
+            <h6 class="text-center uppercase text-green">
+              How do I get support?
+            </h6>
+            <p class="text-center dark:text-primary-500">
+              Lorem ipsum dolor, sit amet adipisicing elit.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- -------------------------- CTA -->
+      <section
+        class="bg-orange px-4 py-8 sm:px-8 sm:py-20 lg:px-12 2xl:my-8 2xl:rounded-2xl dark:bg-primary-900"
+      >
+        <div
+          class="flex max-w-screen-sm flex-col items-center gap-y-8 rounded bg-primary-300 p-8 shadow-md shadow-orange md:relative md:mx-auto md:flex-row md:items-center md:justify-center md:gap-x-6 dark:bg-primary-900"
+        >
+          <figure
+            class="w-24 md:absolute md:-left-12 md:top-2/4 md:-translate-y-2/4"
+          >
+            <img src="images/shield-yellow.svg" alt="" />
+          </figure>
+
+          <div class="space-y-2">
+            <h2 class="text-2xl font-bold text-center">Finance Made Easy</h2>
+            <p class="text-center dark:text-primary-500">
+              Providing top-notch services to our customers.
+            </p>
+          </div>
+
+          <a class="border-2 border-orange px-6 py-2" href="#"> Get Started </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- -------------------------- Footer -->
+    <footer
+      class="px-4 py-8 sm:py-20 sm:px-8 lg:px-12 2xl:rounded-2xl 2xl:my-8 2xl:border 2xl:border-blue"
+    >
+      <div class="grid gap-8 md:grid-cols-2 *:space-y-4">
+        <div>
+          <h2 class="text-2xl font-bold">FNX</h2>
+          <p class="dark:text-primary-500">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+            perspiciatis mollitia ratione delectus vitae repellat, sequi aut
+            voluptatibus adipisci natus corporis maiores .
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold">Contact Us</h3>
+          <p class="dark:text-primary-500">1-500-123-4567</p>
+          <p class="dark:text-primary-500">
+            1234 Main St, New York, NY 10001, USA
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

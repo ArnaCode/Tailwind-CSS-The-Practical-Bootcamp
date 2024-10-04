@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intermediate HTML Concepts</title>
+  </head>
+  <body>
+    <!-- 1. Forms -->
+    <h2>Forms Example</h2>
+    <!-- Form element defines the form and where the data will be submitted (action) -->
+    <form action="/submit-form" method="POST">
+      <!-- Label for the text input to describe the field -->
+      <label for="name">Name:</label>
+      <!-- Text input for user's name -->
+      <input type="text" id="name" name="name" required />
+      <br />
+
+      <!-- Label for the password input -->
+      <label for="password">Password:</label>
+      <!-- Password input for secure entry -->
+      <input type="password" id="password" name="password" required />
+      <br />
+
+      <!-- Label for radio button group (gender) -->
+      <label>Gender:</label>
+      <!-- Radio buttons allow the user to select one option -->
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label>
+
+      <input type="radio" id="other" name="gender" value="other" />
+      <label for="other">Other</label>
+
+      <input
+        type="radio"
+        id="prefer-not-to-say"
+        name="gender"
+        value="prefer-not-to-say"
+      />
+      <label for="prefer-not-to-say">prefer-not-to-say</label>
+      <br />
+
+      <!-- Label for checkboxes (subscription options) -->
+      <label>Subscribe to:</label>
+      <!-- Checkboxes allow multiple selections -->
+      <input type="checkbox" id="news" name="subscribe" value="newsletter" />
+      <label for="news">Newsletter</label>
+      <input type="checkbox" id="offers" name="subscribe" value="offers" />
+      <label for="offers">Special Offers</label>
+      <br />
+
+      <!-- Submit button sends form data to the server -->
+      <button type="submit">Submit</button>
+      <!-- Reset button clears all inputs -->
+      <button type="reset">Reset</button>
+    </form>
+
+    <!-- 2. HTML Entities -->
+    <h2>HTML Entities Example</h2>
+    <p>HTML entities are used to display special characters:</p>
+    <!-- &lt; displays the < symbol and &amp; displays the & symbol -->
+    <p>
+      Use &lt; for the less than symbol (<), and &amp; for the ampersand symbol
+      (&).
+    </p>
+    <p>
+      Other examples: &quot; (for double quotes ")", &apos; (for single quote
+      '), and &copy; (for copyright ©).
+    </p>
+
+    <!-- 3. Tables -->
+    <h2>Tables Example</h2>
+    <!-- Table with rows and columns -->
+    <table border="1">
+      <!-- Table header (defining column titles) -->
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+      </tr>
+      <!-- Table row with data cells -->
+      <tr>
+        <td>John</td>
+        <td>30</td>
+        <td>Male</td>
+      </tr>
+      <tr>
+        <td>Jane</td>
+        <td>25</td>
+        <td>Female</td>
+      </tr>
+    </table>
+
+    <!-- 4. Iframes -->
+    <h2>Iframe Example</h2>
+    <!-- Iframe embedding an external website (Example: YouTube) -->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=IVTEyPu6JtcRU-dU"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+    <!-- 5. HTML Links and Media -->
+    <h2>HTML Links and Media</h2>
+
+    <!-- Hyperlink to an external webpage -->
+    <p>
+      <a href="https://www.example.com" target="_blank"
+        >Visit Example Website</a
+      >
+    </p>
+
+    <!-- Embedding an audio file with controls -->
+    <h3>Audio Example</h3>
+    <audio controls>
+      <source src="audio-file.mp3" type="audio/mpeg" />
+      <!-- Fallback message if the browser doesn't support audio tag -->
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Embedding a video file with controls -->
+    <h3>Video Example</h3>
+    <video width="320" height="240" controls>
+      <source src="video-file.mp4" type="video/mp4" />
+      <!-- Fallback message if the browser doesn't support video tag -->
+      Your browser does not support the video element.
+    </video>
+
+    <!-- 6. Data Attributes -->
+    <h2>Data Attributes Example</h2>
+    <!-- Data attributes (data-*) store custom data in elements -->
+    <div data-product-id="12345" data-category="electronics">
+      <p>This is a product container with custom data attributes.</p>
+    </div>
+
+    <!-- 7. Forms with Validation -->
+    <h2>Form with Validation Example</h2>
+    <form>
+      <!-- Email input with built-in validation for correct email format -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <br />
+
+      <!-- Number input with minimum and maximum range -->
+      <label for="age">Age (must be between 18 and 99):</label>
+      <input type="number" id="age" name="age" min="18" max="99" required />
+      <br />
+
+      <!-- Submit button -->
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind CSS Essentials - Columns</title>
+  </head>
+  <body class="bg-zinc-800">
+    <!-- 
+    --------------------------------
+    --------------------------------
+
+    Columns *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    columns-1	            columns: 1;
+    columns-2	            columns: 2;
+    columns-3	            columns: 3;
+    columns-4	            columns: 4;
+    columns-5	            columns: 5;
+    columns-6	            columns: 6;
+    columns-7	            columns: 7;
+    columns-8	            columns: 8;
+    columns-9	            columns: 9;
+    columns-10	          columns: 10;
+    columns-11	          columns: 11;
+    columns-12	          columns: 12;
+    columns-auto	        columns: auto;
+
+    --------------------------------
+    --------------------------------
+
+    Column Width *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+    columns-3xs	          columns: 16rem; /* 256px */
+    columns-2xs	          columns: 18rem; /* 288px */
+    columns-xs	          columns: 20rem; /* 320px */
+    columns-sm	          columns: 24rem; /* 384px */
+    columns-md	          columns: 28rem; /* 448px */
+    columns-lg	          columns: 32rem; /* 512px */
+    columns-xl	          columns: 36rem; /* 576px */
+    columns-2xl	          columns: 42rem; /* 672px */
+    columns-3xl	          columns: 48rem; /* 768px */
+    columns-4xl	          columns: 56rem; /* 896px */
+    columns-5xl	          columns: 64rem; /* 1024px */
+    columns-6xl	          columns: 72rem; /* 1152px */
+    columns-7xl	          columns: 80rem; /* 1280px */
+
+    --------------------------------
+    --------------------------------
+
+
+  module.exports = {
+  theme: {
+    extend: {
+      columns: {
+        '4xs': '14rem',
+      }
+    },
+  }
+}
+    -->
+    <article class="mx-8 columns-sm gap-8">
+      <div
+        class="flex flex-col gap-6 my-8 text-white break-inside-avoid-column"
+      >
+        <figure class="h-96">
+          <img
+            class="object-cover rounded h-full w-full"
+            src="https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+        </figure>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+          nostrum minus iusto voluptatibus assumenda tempora animi incidunt hic
+          voluptates facere, ad obcaecati odit, harum architecto inventore. Ut
+          illum non expedita officiis quis corporis ullam saepe, repellendus
+          veritatis sapiente dolores cum nobis distinctio error quos aliquam
+          quia excepturi hic esse aspernatur. Neque voluptas quidem inventore
+          veniam vitae. Ab inventore ut esse, commodi eaque fuga sequi est
+          fugiat recusandae assumenda dolorum eius beatae id cumque officia odio
+          architecto, nemo in amet voluptates nisi nihil. Cumque sunt debitis
+          voluptates explicabo repellat eaque. Fugit, voluptas. Consectetur
+          repellendus commodi temporibus, atque accusamus ipsa ab eius?
+        </p>
+      </div>
+
+      <div
+        class="flex flex-col gap-6 my-8 text-white break-inside-avoid-column"
+      >
+        <figure class="h-96">
+          <img
+            class="object-cover rounded h-full w-full"
+            src="https://images.pexels.com/photos/1547813/pexels-photo-1547813.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=11"
+            alt=""
+          />
+        </figure>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+          nostrum minus iusto voluptatibus assumenda tempora animi incidunt hic
+          voluptates facere, ad obcaecati odit, harum architecto inventore. Ut
+          illum non expedita officiis quis corporis ullam saepe, repellendus
+          veritatis sapiente dolores cum nobis distinctio error quos aliquam
+          quia excepturi hic esse aspernatur. Neque voluptas quidem inventore
+          veniam vitae. Ab inventore ut esse, commodi eaque fuga sequi est
+          fugiat recusandae assumenda dolorum eius beatae id cumque
+        </p>
+      </div>
+
+      <div
+        class="flex flex-col gap-6 my-8 text-white break-inside-avoid-column"
+      >
+        <figure class="h-96">
+          <img
+            class="object-cover rounded h-full w-full"
+            src="https://images.pexels.com/photos/1366909/pexels-photo-1366909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+        </figure>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+          nostrum minus iusto voluptatibus assumenda tempora animi incidunt hic
+          voluptates facere, ad obcaecati odit, harum architecto inventore. Ut
+          illum non expedita officiis quis corporis ullam saepe, repellendus
+          veritatis sapiente dolores cum nobis distinctio error quos aliquam
+          quia excepturi hic esse aspernatur. Neque voluptas quidem inventore
+          veniam vitae. Ab inventore ut esse, commodi eaque fuga sequi
+        </p>
+      </div>
+
+      <div
+        class="flex flex-col gap-6 my-8 text-white break-inside-avoid-column"
+      >
+        <figure class="h-96">
+          <img
+            class="object-cover rounded h-full w-full"
+            src="https://images.pexels.com/photos/1820563/pexels-photo-1820563.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+        </figure>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+          nostrum minus iusto voluptatibus assumenda tempora animi incidunt hic
+          voluptates facere, ad obcaecati odit, harum architecto inventore. Ut
+          illum non expedita officiis quis corporis ullam saepe, repellendus
+          veritatis sapiente dolores cum nobis distinctio error quos aliquam
+          quia excepturi hic esse aspernatur. Neque voluptas quidem inventore
+          veniam vitae. Ab inventore ut esse, commodi eaque fuga sequi
+        </p>
+      </div>
+
+      <div
+        class="flex flex-col gap-6 my-8 text-white break-inside-avoid-column"
+      >
+        <figure class="h-96">
+          <img
+            class="object-cover rounded h-full w-full"
+            src="https://images.pexels.com/photos/2086622/pexels-photo-2086622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+        </figure>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+          nostrum minus iusto voluptatibus assumenda tempora animi incidunt hic
+          voluptates facere, ad obcaecati odit,
+        </p>
+      </div>
+
+      <div
+        class="flex flex-col gap-6 my-8 text-white break-inside-avoid-column"
+      >
+        <figure class="h-96">
+          <img
+            class="object-cover rounded h-full w-full"
+            src="https://images.pexels.com/photos/2189696/pexels-photo-2189696.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+        </figure>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+          nostrum minus iusto voluptatibus assumenda tempora animi incidunt hic
+          voluptates facere, ad obcaecati odit, Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Corrupti molestias optio, hic nisi
+          obcaecati, quasi non labore voluptatem iure quam quisquam delectus
+          veritatis consequatur beatae porro, temporibus magnam voluptatibus
+          veniam fuga. Distinctio, repudiandae, assumenda officiis iusto,
+          laborum sed corrupti exercitationem ut unde animi doloribus dicta.
+          Velit sint ducimus fugit voluptates.
+        </p>
+      </div>
+
+      <div
+        class="flex flex-col gap-6 my-8 text-white break-inside-avoid-column"
+      >
+        <figure class="h-96">
+          <img
+            class="object-cover rounded h-full w-full"
+            src="https://images.pexels.com/photos/1028225/pexels-photo-1028225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+        </figure>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+          nostrum minus iusto voluptatibus assumenda tempora animi incidunt hic
+          voluptates facere, ad obcaecati odit, Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Corrupti molestias optio, hic nisi
+          obcaecati, quasi non labore voluptatem iure quam quisquam delectus
+          veritatis consequatur beatae porro, temporibus magnam voluptatibus
+          veniam fuga. Distinctio, repudiandae,
+        </p>
+      </div>
+
+      <div
+        class="flex flex-col gap-6 my-8 text-white break-inside-avoid-column"
+      >
+        <figure class="h-96">
+          <img
+            class="object-cover rounded h-full w-full"
+            src="https://images.pexels.com/photos/1770809/pexels-photo-1770809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+        </figure>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+          nostrum minus iusto voluptatibus assumenda tempora animi incidunt hic
+          voluptates facere, ad obcaecati odit, Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Corrupti molestias optio, hic nisi
+          obcaecati, quasi non labore voluptatem
+        </p>
+      </div>
+
+      <div
+        class="flex flex-col gap-6 my-8 text-white break-inside-avoid-column"
+      >
+        <figure class="h-96">
+          <img
+            class="object-cover rounded h-full w-full"
+            src="https://images.pexels.com/photos/1381679/pexels-photo-1381679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+        </figure>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+          nostrum minus iusto voluptatibus assumenda tempora animi incidunt hic
+          voluptates facere, ad obcaecati odit, Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Corrupti
+        </p>
+      </div>
+
+      <div
+        class="flex flex-col gap-6 my-8 text-white break-inside-avoid-column"
+      >
+        <figure class="h-96">
+          <img
+            class="object-cover rounded h-full w-full"
+            src="https://images.pexels.com/photos/1624504/pexels-photo-1624504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+        </figure>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+          nostrum minus iusto voluptatibus assumenda tempora animi incidunt hic
+          voluptates facere, ad obcaecati odit, Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Corrupti
+        </p>
+      </div>
+
+      <div
+        class="flex flex-col gap-6 my-8 text-white break-inside-avoid-column"
+      >
+        <figure class="h-96">
+          <img
+            class="object-cover rounded h-full w-full"
+            src="https://images.pexels.com/photos/534164/pexels-photo-534164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+        </figure>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+          nostrum minus iusto voluptatibus assumenda tempora animi incidunt hic
+          voluptates facere, ad obcaecati odit, Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Corrupti Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Fugit adipisci mollitia porro nemo,
+          minus perspiciatis quos laudantium aspernatur aut qui odio eveniet
+          nesciunt labore excepturi?
+        </p>
+      </div>
+
+      <div
+        class="flex flex-col gap-6 my-8 text-white break-inside-avoid-column"
+      >
+        <figure class="h-96">
+          <img
+            class="object-cover rounded h-full w-full"
+            src="https://images.pexels.com/photos/1761279/pexels-photo-1761279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+        </figure>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+          nostrum minus iusto voluptatibus assumenda tempora animi incidunt hic
+          voluptates facere, ad obcaecati odit, Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Corrupti Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Fugit adipisci mollitia porro nemo,
+          minus perspiciatis quos laudantium aspernatur aut qui odio eveniet
+          nesciunt labore excepturi? Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Quas, similique. Deleniti, quia nihil blanditiis
+          delectus ea molestiae aspernatur adipisci temporibus dolore enim
+          quisquam reiciendis odit odio nisi non voluptas magnam aliquid placeat
+          iusto commodi assumenda.
+        </p>
+      </div>
+
+      <div
+        class="flex flex-col gap-6 my-8 text-white break-inside-avoid-column"
+      >
+        <figure class="h-96">
+          <img
+            class="object-cover rounded h-full w-full"
+            src="https://images.pexels.com/photos/165537/pexels-photo-165537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+        </figure>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+          nostrum minus iusto voluptatibus assumenda tempora animi incidunt hic
+          voluptates facere, ad
+        </p>
+      </div>
+    </article>
+  </body>
+</html>
