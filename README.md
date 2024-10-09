@@ -2,6 +2,8 @@
 
 ![https://www.udemy.com/course/tailwind-css-the-practical-bootcamp/?referralCode=2E39DB384CEBA70A26E9](projects.jpg)
 
+## [Tailwind CSS Bootcamp Link - Udemy](https://www.udemy.com/course/tailwind-css-the-practical-bootcamp/?referralCode=2E39DB384CEBA70A26E9)
+
 In this bootcamp, You will **master Tailwind CSS** from the ground up and transform your
 web development skills with **hands-on coding
 exercises** and **real-world projects**. Whether you're just getting
