@@ -1,14 +1,26 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
+@theme {
+  --breakpoint-988px: 988px;
+  --breakpoint-1356px: 1356px;
+  --breakpoint-668px: 668px;
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
 @layer base {
-  body {
-    @apply p-6 flex justify-center xl:p-12;
-  }
-
-  img {
-    @apply rounded max-w-full h-full object-cover;
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
   }
 }
 
@@ -19,5 +31,15 @@
     &:hover {
       @apply grayscale-0;
     }
+  }
+}
+
+@layer base {
+  body {
+    @apply p-6 flex justify-center xl:p-12;
+  }
+
+  img {
+    @apply rounded-sm max-w-full h-full object-cover;
   }
 }

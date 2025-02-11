@@ -1,17 +1,31 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
+@theme {
+  --color-primary: hsl(0deg 0% 14%);
+  --color-secondary: hsl(0deg 0% 18%);
+  --color-accent: hsl(3deg 74% 65%);
+  --color-text: hsl(0deg 0% 100%);
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
 @layer base {
-  :root {
-    --color-primary: 0deg 0% 14%;
-    --color-secondary: 0deg 0% 18%;
-    --color-accent: 3deg 74% 65%;
-    --color-text: 0deg 0% 100%;
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
   }
 
   img {
-    @apply rounded h-full object-cover;
+    @apply rounded-sm h-full object-cover;
   }
 }
 
